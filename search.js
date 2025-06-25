@@ -29,7 +29,7 @@ function displayResults(results) {
 fetch('manifest.json')
   .then(res => res.json())
   .then(data => {
-    fullData = data;
+    fullData = data.sort(() => Math.random() - 0.5);
 
     // Show full data by default
     displayResults(fullData);
