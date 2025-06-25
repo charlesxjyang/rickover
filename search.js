@@ -12,9 +12,9 @@ function displayResults(results) {
       <td class="py-2">${doc.Year}</td>
       <td>${doc.Summary.slice(0, 200)}...</td>
       <td>
-        ${/^https?:\/\//.test(doc.Source)
+        ${doc.Source && /^https?:\/\//.test(doc.Source)
           ? `<a href="${doc.Source}" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline">${doc.Source}</a>`
-          : doc.Source || ''}
+          : (doc.Source || '')}
       </td>
       <td>
         <a href="${doc.file_pdf}" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline">PDF</a> |
