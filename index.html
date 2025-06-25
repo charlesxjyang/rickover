@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Rickover Corpus</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <header class="text-center py-8">
+    <img src="assets/rickover.jpg" alt="Rickover" class="mx-auto w-32 rounded-full border border-gray-300" />
+    <h1 class="text-3xl font-bold mt-4">The Rickover Corpus</h1>
+    <p class="max-w-2xl mx-auto mt-2 text-sm text-gray-600">
+      Admiral Hyman Rickover, also known as the "Father of the Nuclear Navy", built the first nuclear-powered submarine and civilian nuclear reactor. 
+        <br>
+        <br>
+      As the U.S. returns once more to an era of shipbuilding and building nuclear energy infrastructure, understanding Rickover's management methods is of even greater importance. 
+        <br>
+        <br>
+      This website is a searchable digital archive of Admiral Hyman G. Rickover’s speeches and memos, including never before seen digitized artifacts from the <a href="https://www.usna.edu/Library/sca/man-findingaids/view.php?f=MS_561" target="_blank">U.S. Naval Academy Archives</a>
+    </p>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4">
+    <input id="searchInput" type="text" placeholder="Search speeches, summaries..." class="w-full px-4 py-2 border border-gray-300 rounded mb-6" />
+    <table class="w-full text-sm border-collapse" id="resultsTable">
+      <thead>
+        <tr class="border-b border-gray-300 text-left">
+          <th>Title</th>
+          <th class="py-2">Year</th>
+          <th>Summary</th>
+          <th>Source</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200"></tbody>
+    </table>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="search.js"></script>
+
+  <footer class="mt-12 border-t border-gray-300 pt-6 text-sm text-gray-600 text-center max-w-2xl mx-auto px-4">
+  <p>
+    This project was compiled and digitized by <a href="https://charlesyang.io" target="_blank">Charles Yang</a> under the <a href="industrialstrategy.org" target="_href">Center for Industrial Strategy</a>, with support from <a href="https://twitter.com/defenseanalyses" target="_blank">Defense Analyses Research Corporation</a> and <a href="https://marginalrevolution.com/marginalrevolution/2025/06/emergent-ventures-winners-43rd-cohort.html" target="_blank">Emergent Ventures</a>.
+    <br>
+    Thanks also to <a href="https://www.linkedin.com/in/jacks-flenniken-083aa2310/" target="_blank">Jacks Flenniken</a> for his assistance in digitizing the USNA Archives.
+  </p>
+  <p class="mt-2">
+    For feedback or questions, contact: <a href="mailto:contact@charlesyang.io" class="text-blue-600 underline">contact@charlesyang.io</a>
+  </p>
+</footer>
+</body>
+</html>
