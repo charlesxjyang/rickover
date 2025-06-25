@@ -26,15 +26,15 @@
   <main class="max-w-5xl mx-auto px-4">
     <input id="searchInput" type="text" placeholder="Search speeches, summaries..." class="w-full px-4 py-2 border border-gray-300 rounded mb-6" />
     <table class="w-full text-sm border-collapse" id="resultsTable">
-      <thead>
-        <tr class="border-b border-gray-300 text-left">
-          <th>Title</th>
-          <th class="py-2">Year</th>
-          <th>Summary</th>
-          <th>Source</th>
-          <th>Links</th>
-        </tr>
-      </thead>
+    <thead>
+    <tr class="border-b border-gray-300 text-left">
+        <th class="w-64">Title</th>
+        <th class="py-2 w-20">Year</th>
+        <th class="w-2/5">Summary</th> <!-- Wider -->
+        <th class="w-32">Source</th>   <!-- Narrower -->
+        <th class="w-32">Links</th>
+    </tr>
+    </thead>
       <tbody class="divide-y divide-gray-200"></tbody>
     </table>
   </main>

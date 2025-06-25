@@ -8,18 +8,18 @@ function displayResults(results) {
   results.forEach(doc => {
     const row = document.createElement('tr');
     row.innerHTML = `
-      <td class="font-semibold">${doc.Title}</td>
-      <td class="py-2">${doc.Year}</td>
-      <td>${doc.Summary.slice(0, 200)}...</td>
-      <td>
-        ${doc.Source && /^https?:\/\//.test(doc.Source)
-          ? `<a href="${doc.Source}" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline">${doc.Source}</a>`
-          : (doc.Source || '')}
-      </td>
-      <td>
-        <a href="${doc.file_pdf}" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline">PDF</a> |
-        <a href="${doc.url_OCR}" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline">OCR</a>
-      </td>
+        <td class="w-64 font-semibold py-2">${doc.Title}</td>
+        <td class="w-20 py-2">${doc.Year}</td>
+        <td class="w-2/5 py-2">${doc.Summary?.slice(0, 200) || ''}...</td>
+        <td class="w-32 py-2">
+            ${doc.Source && /^https?:\/\//.test(doc.Source)
+            ? `<a href="${doc.Source}" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline">Link</a>`
+            : (doc.Source || '')}
+        </td>
+        <td class="w-32 py-2">
+            <a href="${doc.file_pdf}" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline">PDF</a> |
+            <a href="${doc.url_OCR}" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline">OCR</a>
+        </td>
     `;
     tbody.appendChild(row);
   });
