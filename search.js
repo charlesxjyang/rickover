@@ -33,7 +33,7 @@ fetch('manifest.json')
     // Set up Fuse search
     fuse = new Fuse(fullData, {
       keys: ['Title', 'Summary'],
-      threshold: 0.3,
+      threshold: 0.5,
       minMatchCharLength: 2,
     });
 
