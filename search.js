@@ -41,17 +41,23 @@ fetch('manifest.json')
     });
 
     // Wire up search input
+let initialized = false;
+
+setTimeout(() => {
+  const searchInput = document.getElementById('searchInput');
+
   searchInput.addEventListener('input', (e) => {
-  const query = e.target.value.trim();
-  if (query.length === 0) {
-    // Don't show all results on empty query
-    displayResults(fullData.slice(0, 10));
-  } else {
-    const results = fuse.search(query).map(r => r.item);
+    if (!initialized) return; // Block accidental early triggers
+
+    const query = e.target.value.trim();
+    const results = query
+      ? fuse.search(query).map(r => r.item)
+      : fullData.slice(0, 10); // Still only show 10 if blank
     displayResults(results);
-  }
-});
-  })
+  });
+  initialized = true;
+}, 100);
+})
   .catch(err => {
     console.error('Error loading manifest.json:', err);
     document.querySelector('#resultsTable tbody').innerHTML = '<tr><td colspan="4">Failed to load data.</td></tr>';
