@@ -32,8 +32,7 @@ fetch('manifest.json')
     fullData = data.sort(() => Math.random() - 0.5);
 
     // Show full data by default
-    displayResults(fullData);
-
+    displayResults(fullData.slice(0, 10));
     // Set up Fuse search
     fuse = new Fuse(fullData, {
       keys: ['Title', 'Summary'],
