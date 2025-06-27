@@ -2,7 +2,7 @@ let fuse;
 let fullData = [];
 
 function displayResults(results) {
-  const tbody = document.querySelector('#resultsBody');
+  const tbody = document.querySelector('#resultsBody'); // ✅ must match HTML
   tbody.innerHTML = '';
 
   results.forEach(doc => {
@@ -24,6 +24,7 @@ function displayResults(results) {
     tbody.appendChild(row);
   });
 }
+
 
 // Load manifest and initialize Fuse
 fetch('manifest.json')
