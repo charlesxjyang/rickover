@@ -106,8 +106,8 @@ function setupIntersectionObserver(dataToObserve) {
             }
         });
     }, {
-        // The root is the scrollable div containing the table
-        root: document.querySelector('.max-h-[600px]'),
+        // THE FIX IS HERE: Escape the square brackets for document.querySelector
+        root: document.querySelector('.max-h-\\[600px\\]'),
         // Trigger when 100px from the bottom of the root element
         rootMargin: '0px 0px 100px 0px',
         // Trigger when 10% of the target element is visible
