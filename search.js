@@ -1,242 +1,303 @@
-document.addEventListener('DOMContentLoaded', () => { // <--- START OF DOMContentLoaded WRAPPER
-let fuse;
-let fullData = [];
-let displayedData = [];
-let currentRenderedRowCount = 0;
-const rowsPerLoad = 20;
-let observer;
+// search.js
 
-// --- NEW MODAL ELEMENTS ---
-const documentModal = document.getElementById('documentModal');
-const closeModalButton = document.getElementById('closeModalButton');
-const modalTitle = document.getElementById('modalTitle');
-const modalIframeContainer = document.getElementById('modalIframeContainer');
-// --- END NEW MODAL ELEMENTS ---
+document.addEventListener('DOMContentLoaded', () => {
 
-// Function to open the modal and load content
-function openDocumentModal(s3Url, title) {
-    modalTitle.textContent = title || 'Document View'; // Set modal title
-    modalIframeContainer.innerHTML = '<p class="text-gray-500">Loading document...</p>'; // Show loading message
+    let fuse;
+    let fullData = [];
+    let displayedData = [];
+    let currentRenderedRowCount = 0;
+    const rowsPerLoad = 20;
+    let observer;
 
-    const iframe = document.createElement('iframe');
-    iframe.src = s3Url;
-    iframe.title = title || "Document Viewer"; // Good for accessibility
-    iframe.loading = "lazy"; // Optimize loading
-    iframe.allowfullscreen = true; // Allow fullscreen for PDFs if desired
+    // --- S3 Base URL (UNCOMMENT AND SET IF YOUR MANIFEST.JSON HAS RELATIVE PATHS) ---
+    // const s3BaseUrl = 'https://your-s3-bucket.s3.amazonaws.com/'; // <-- REPLACE WITH YOUR ACTUAL S3 BASE URL
+    // --- END S3 Base URL ---
 
-    iframe.onload = () => {
-        // Optional: you can add a class to the iframe or container if you need to style it specifically
-        // after content has loaded, e.g., if you have a spinner overlay.
-        // For this setup, the iframe loading will simply replace the "Loading document..." text.
-    };
-    iframe.onerror = () => {
-        modalIframeContainer.innerHTML = '<p class="text-red-500">Error loading document. Please try again.</p>';
-        console.error("Error loading iframe content from:", s3Url);
-    };
+    // --- MODAL ELEMENTS ---
+    // These are now guaranteed to exist because we are inside DOMContentLoaded
+    const documentModal = document.getElementById('documentModal');
+    const closeModalButton = document.getElementById('closeModalButton');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalIframeContainer = document.getElementById('modalIframeContainer');
+    // --- END MODAL ELEMENTS ---
 
-    modalIframeContainer.innerHTML = ''; // Clear loading message before appending iframe
-    modalIframeContainer.appendChild(iframe);
+    // Function to open the modal and load content
+    function openDocumentModal(s3Url, title) {
+        modalTitle.textContent = title || 'Document View'; // Set modal title
+        modalIframeContainer.innerHTML = '<p class="text-gray-500">Loading document...</p>'; // Show loading message
 
-    documentModal.classList.add('active'); // Show the modal
-    document.body.style.overflow = 'hidden'; // Prevent scrolling of the main page
-}
+        const iframe = document.createElement('iframe');
+        iframe.src = s3Url;
+        iframe.title = title || "Document Viewer"; // Good for accessibility
+        iframe.loading = "lazy"; // Optimize loading
+        iframe.allowfullscreen = true; // Allow fullscreen for PDFs if desired
 
-// Function to close the modal
-function closeDocumentModal() {
-    documentModal.classList.remove('active'); // Hide the modal
-    document.body.style.overflow = ''; // Restore scrolling of the main page
-    modalIframeContainer.innerHTML = ''; // Clear iframe content when closing
-}
+        iframe.onerror = () => {
+            modalIframeContainer.innerHTML = '<p class="text-red-500">Error loading document. Please try again.</p>';
+            console.error("Error loading iframe content from:", s3Url);
+        };
 
+        modalIframeContainer.innerHTML = ''; // Clear loading message before appending iframe
+        modalIframeContainer.appendChild(iframe);
 
-function displayResults(dataToDisplay, append = false) {
-    const tbody = document.querySelector('#resultsBody');
-
-    if (!append) {
-        tbody.innerHTML = '';
-        currentRenderedRowCount = 0;
-        if (observer) {
-            observer.disconnect();
-            observer = null;
-        }
+        documentModal.classList.add('active'); // Show the modal
+        document.body.style.overflow = 'hidden'; // Prevent scrolling of the main page
     }
 
-    const startIndex = currentRenderedRowCount;
-    const endIndex = Math.min(startIndex + rowsPerLoad, dataToDisplay.length);
-    if (startIndex >= endIndex) {
-        if (observer) {
-            observer.disconnect();
-            observer = null;
-        }
-        return;
+    // Function to close the modal
+    function closeDocumentModal() {
+        documentModal.classList.remove('active'); // Hide the modal
+        document.body.style.overflow = ''; // Restore scrolling of the main page
+        modalIframeContainer.innerHTML = ''; // Clear iframe content when closing
     }
 
-    const fragment = document.createDocumentFragment();
+    function displayResults(dataToDisplay, append = false) {
+        const tbody = document.querySelector('#resultsBody');
 
-    for (let i = startIndex; i < endIndex; i++) {
-        const doc = dataToDisplay[i];
-        const row = document.createElement('tr');
-
-        // First 3 columns via innerHTML
-        row.innerHTML = `
-            <td class="w-64 font-semibold py-2">${doc.Title}</td>
-            <td class="w-20 py-2">${doc.Year}</td>
-            <td class="w-2/5 py-2">
-                ${doc.Summary?.slice(0, 200) || ''}
-                ${doc.Summary && doc.Summary.length > 200 ? '...' : ''}
-            </td>
-        `;
-
-        // Source column
-        const sourceCell = document.createElement('td');
-        sourceCell.className = 'w-32 py-2';
-        if (doc.Source && /^https?:\/\//.test(doc.Source)) {
-            sourceCell.innerHTML = `<a href="${doc.Source}" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline">Link</a>`;
-        } else {
-            sourceCell.textContent = doc.Source || '';
-        }
-
-        // Links column - THIS IS THE MAJOR CHANGE FOR YOUR MODAL
-        const linksCell = document.createElement('td');
-        linksCell.className = 'w-32 py-2';
-        let linksHtml = [];
-
-        if (doc.file_pdf) {
-            // Using data-s3-url to store the actual S3 path
-            // Using data-document-title to pass the title to the modal
-            linksHtml.push(
-                `<a href="#" class="text-blue-600 underline document-link" data-s3-url="${encodeURIComponent(doc.file_pdf)}" data-document-title="${encodeURIComponent(doc.Title)}">PDF</a>`
-            );
-        }
-        if (doc.url_OCR) {
-            // Using data-s3-url to store the actual S3 path
-            // Using data-document-title to pass the title to the modal
-            linksHtml.push(
-                `<a href="#" class="text-blue-600 underline document-link" data-s3-url="${encodeURIComponent(doc.url_OCR)}" data-document-title="${encodeURIComponent(doc.Title)}">OCR</a>`
-            );
-        }
-        linksCell.innerHTML = linksHtml.join(' | ');
-
-        row.appendChild(sourceCell);
-        row.appendChild(linksCell);
-        fragment.appendChild(row);
-    }
-
-    tbody.appendChild(fragment);
-    currentRenderedRowCount = endIndex;
-
-    if (currentRenderedRowCount < dataToDisplay.length) {
-        setupIntersectionObserver(dataToDisplay);
-    } else {
-        if (observer) {
-            observer.disconnect();
-            observer = null;
-        }
-    }
-}
-
-function setupIntersectionObserver(dataToObserve) {
-    const tbody = document.querySelector('#resultsBody');
-    if (tbody.children.length === 0) return;
-
-    const lastRow = tbody.lastElementChild;
-
-    if (observer) {
-        observer.disconnect();
-    }
-
-    observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && currentRenderedRowCount < dataToObserve.length) {
+        if (!append) {
+            tbody.innerHTML = '';
+            currentRenderedRowCount = 0;
+            if (observer) {
                 observer.disconnect();
-                displayResults(dataToObserve, true);
+                observer = null;
             }
-        });
-    }, {
-        root: document.querySelector('.max-h-\\[600px\\]'),
-        rootMargin: '0px 0px 100px 0px',
-        threshold: 0.1
-    });
+        }
 
-    observer.observe(lastRow);
-}
+        const startIndex = currentRenderedRowCount;
+        const endIndex = Math.min(startIndex + rowsPerLoad, dataToDisplay.length);
+        if (startIndex >= endIndex) {
+            if (observer) {
+                observer.disconnect();
+                observer = null;
+            }
+            return;
+        }
 
-// --- NEW MODAL EVENT LISTENERS ---
+        const fragment = document.createDocumentFragment();
 
-// Event listener for clicks on document links (using delegation on the table body)
-document.addEventListener('click', (event) => { // Using document for event listener
-    const link = event.target.closest('.document-link');
+        for (let i = startIndex; i < endIndex; i++) {
+            const doc = dataToDisplay[i];
+            const row = document.createElement('tr');
 
-    if (link) {
-        event.preventDefault(); // Prevent browser navigation
+            // First 3 columns via innerHTML
+            row.innerHTML = `
+                <td class="w-64 font-semibold py-2">${doc.Title || ''}</td>
+                <td class="w-20 py-2">${doc.Year || ''}</td>
+                <td class="w-2/5 py-2">
+                    ${doc.Summary?.slice(0, 200) || ''}
+                    ${doc.Summary && doc.Summary.length > 200 ? '...' : ''}
+                </td>
+            `;
 
-        // Decode the URL before using it, as it was encoded when put into data-s3-url
-        const s3Url = decodeURIComponent(link.dataset.s3Url);
-        const documentTitle = decodeURIComponent(link.dataset.documentTitle); // Decode the title too
+            // Source column
+            const sourceCell = document.createElement('td');
+            sourceCell.className = 'w-32 py-2';
+            if (doc.Source && /^https?:\/\//.test(doc.Source)) {
+                sourceCell.innerHTML = `<a href="${doc.Source}" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline">Link</a>`;
+            } else {
+                sourceCell.textContent = doc.Source || '';
+            }
 
-        if (s3Url) {
-            openDocumentModal(s3Url, documentTitle);
+            // Links column - THIS IS WHERE DEEP LINKING IS IMPLEMENTED
+            const linksCell = document.createElement('td');
+            linksCell.className = 'w-32 py-2';
+            let linksHtml = [];
+
+            let fullPdfUrl = doc.file_pdf;
+            let fullOcrUrl = doc.url_OCR;
+
+            // --- UNCOMMENT IF YOUR MANIFEST.JSON HAS RELATIVE PATHS FOR PDF/OCR ---
+            // if (fullPdfUrl && !fullPdfUrl.startsWith('http')) {
+            //     fullPdfUrl = s3BaseUrl + fullPdfUrl;
+            // }
+            // if (fullOcrUrl && !fullOcrUrl.startsWith('http')) {
+            //     fullOcrUrl = s3BaseUrl + fullOcrUrl;
+            // }
+            // --- END UNCOMMENT SECTION ---
+
+            if (fullPdfUrl) {
+                const s3PathEncodedForUrl = encodeURIComponent(fullPdfUrl);
+                const titleEncodedForUrl = encodeURIComponent(doc.Title || '');
+                linksHtml.push(
+                    `<a href="?file=${s3PathEncodedForUrl}" class="text-blue-600 underline document-link" data-s3-url="${s3PathEncodedForUrl}" data-document-title="${titleEncodedForUrl}">PDF</a>`
+                );
+            }
+            if (fullOcrUrl) {
+                // The OCR (TXT) files will also load in the iframe, just as raw text
+                const s3PathEncodedForUrl = encodeURIComponent(fullOcrUrl);
+                const titleEncodedForUrl = encodeURIComponent(doc.Title || '');
+                if (fullPdfUrl) { // Add a separator if PDF link already exists
+                    linksHtml.push(' | ');
+                }
+                linksHtml.push(
+                    `<a href="?file=${s3PathEncodedForUrl}" class="text-blue-600 underline document-link" data-s3-url="${s3PathEncodedForUrl}" data-document-title="${titleEncodedForUrl}">OCR</a>`
+                );
+            }
+            linksCell.innerHTML = linksHtml.join(''); // Removed extra ' | ' join as it's now handled conditionally
+
+            row.appendChild(sourceCell);
+            row.appendChild(linksCell);
+            fragment.appendChild(row);
+        }
+
+        tbody.appendChild(fragment);
+        currentRenderedRowCount = endIndex;
+
+        if (currentRenderedRowCount < dataToDisplay.length) {
+            setupIntersectionObserver(dataToDisplay);
         } else {
-            console.error("No s3Url found on the clicked link:", link);
+            if (observer) {
+                observer.disconnect();
+                observer = null;
+            }
         }
     }
-});
 
-// Event listener for the close button
-closeModalButton.addEventListener('click', closeDocumentModal);
+    function setupIntersectionObserver(dataToObserve) {
+        const tbody = document.querySelector('#resultsBody');
+        if (tbody.children.length === 0) return;
 
-// Optional: Close modal when clicking outside content (on the overlay)
-documentModal.addEventListener('click', (event) => {
-    // Check if the click was directly on the modal overlay itself, not its children
-    if (event.target === documentModal) {
-        closeDocumentModal();
-    }
-});
+        const lastRow = tbody.lastElementChild;
 
-// Optional: Close modal with Escape key
-document.addEventListener('keydown', (event) => {
-    // Check if the modal is currently active
-    if (event.key === 'Escape' && documentModal.classList.contains('active')) {
-        closeDocumentModal();
-    }
-});
+        if (observer) {
+            observer.disconnect();
+        }
 
-// --- END NEW MODAL EVENT LISTENERS ---
-
-
-// Main execution
-fetch('manifest.json')
-    .then(res => {
-        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
-        return res.json();
-    })
-    .then(data => {
-        // Assuming your JSON structure has a 'documents' array or similar
-        // Adjust this line if 'data' directly contains the array of documents
-        fullData = data.documents ? data.documents : data; // Fallback if no 'documents' key
-        fullData = fullData.sort(() => Math.random() - 0.5);
-        displayedData = fullData;
-
-        displayResults(displayedData, false);
-
-        fuse = new Fuse(fullData, {
-            keys: ['Title', 'Summary'],
-            threshold: 0.5,
-            minMatchCharLength: 2,
+        observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && currentRenderedRowCount < dataToObserve.length) {
+                    observer.disconnect();
+                    displayResults(dataToObserve, true);
+                }
+            });
+        }, {
+            root: document.querySelector('.max-h-\\[600px\\]'), // This targets the scrollable div
+            rootMargin: '0px 0px 100px 0px',
+            threshold: 0.1
         });
 
-        const searchInput = document.getElementById('searchInput');
-        searchInput.addEventListener('input', (e) => {
-            const query = e.target.value.trim();
-            displayedData = query
-                ? fuse.search(query).map(r => r.item)
-                : fullData;
-            displayResults(displayedData, false);
-        });
-    })
-    .catch(err => {
-        console.error('Error loading manifest.json:', err);
-        document.querySelector('#resultsBody').innerHTML =
-            '<tr><td colspan="5" class="py-4 text-red-600 text-center">Failed to load data. Please check console for details.</td></tr>';
+        observer.observe(lastRow);
+    }
+
+    // --- MODAL EVENT LISTENERS ---
+
+    // Event listener for clicks on document links (using delegation on the table body)
+    document.addEventListener('click', (event) => {
+        const link = event.target.closest('.document-link');
+
+        if (link) {
+            event.preventDefault(); // Prevent browser navigation
+
+            // Decode the URL before using it, as it was encoded when put into data-s3-url
+            const s3Url = decodeURIComponent(link.dataset.s3Url);
+            const documentTitle = decodeURIComponent(link.dataset.documentTitle); // Decode the title too
+
+            // Update URL in browser history without reloading the page
+            // This makes the deep link shareable even if the user clicks a link
+            const newUrl = `${window.location.pathname}?file=${encodeURIComponent(s3Url)}`;
+            window.history.pushState({ path: newUrl }, '', newUrl);
+
+
+            if (s3Url) {
+                openDocumentModal(s3Url, documentTitle);
+            } else {
+                console.error("No s3Url found on the clicked link:", link);
+            }
+        }
     });
-}); // <--- END OF DOMContentLoaded WRAPPER
+
+    // Event listener for the close button
+    closeModalButton.addEventListener('click', closeDocumentModal);
+
+    // Optional: Close modal when clicking outside content (on the overlay)
+    documentModal.addEventListener('click', (event) => {
+        // Check if the click was directly on the modal overlay itself, not its children
+        if (event.target === documentModal) {
+            closeDocumentModal();
+        }
+    });
+
+    // Optional: Close modal with Escape key
+    document.addEventListener('keydown', (event) => {
+        // Check if the modal is currently active
+        if (event.key === 'Escape' && documentModal.classList.contains('active')) {
+            closeDocumentModal();
+        }
+    });
+
+    // --- END MODAL EVENT LISTENERS ---
+
+
+    // Main execution
+    fetch('manifest.json')
+        .then(res => {
+            if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+            return res.json();
+        })
+        .then(data => {
+            // Adjust this line if 'data' directly contains the array of documents,
+            // or if your JSON has a different key than 'documents'
+            fullData = data.documents ? data.documents : data;
+            fullData = fullData.sort(() => Math.random() - 0.5); // Random sort
+            displayedData = fullData; // Initial display data is all data
+
+            displayResults(displayedData, false); // Populate the table
+
+            fuse = new Fuse(fullData, {
+                keys: ['Title', 'Summary'],
+                threshold: 0.5,
+                minMatchCharLength: 2,
+            });
+
+            const searchInput = document.getElementById('searchInput');
+            searchInput.addEventListener('input', (e) => {
+                const query = e.target.value.trim();
+                displayedData = query
+                    ? fuse.search(query).map(r => r.item)
+                    : fullData;
+                displayResults(displayedData, false);
+            });
+
+            // --- Handle deep linking on initial page load ---
+            handleDeepLink();
+            // --- END NEW ---
+        })
+        .catch(err => {
+            console.error('Error loading manifest.json:', err);
+            document.querySelector('#resultsBody').innerHTML =
+                '<tr><td colspan="5" class="py-4 text-red-600 text-center">Failed to load data. Please check console for details.</td></tr>';
+        });
+
+    // --- NEW FUNCTION: handleDeepLink ---
+    function handleDeepLink() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const fileToLoad = urlParams.get('file'); // Get the 'file' parameter
+
+        if (fileToLoad) {
+            const decodedFileToLoad = decodeURIComponent(fileToLoad);
+
+            // Find the corresponding document in your fullData array
+            const documentToOpen = fullData.find(doc => {
+                // --- UNCOMMENT AND MODIFY IF YOUR MANIFEST.JSON HAS RELATIVE PATHS ---
+                // const docPdfUrl = doc.file_pdf ? (s3BaseUrl + doc.file_pdf) : null;
+                // const docOcrUrl = doc.url_OCR ? (s3BaseUrl + doc.url_OCR) : null;
+                // return docPdfUrl === decodedFileToLoad || docOcrUrl === decodedFileToLoad;
+                // --- END UNCOMMENT SECTION ---
+
+                // If doc.file_pdf and doc.url_OCR are already full S3 URLs:
+                return doc.file_pdf === decodedFileToLoad || doc.url_OCR === decodedFileToLoad;
+            });
+
+
+            if (documentToOpen) {
+                // If found, open the modal with the correct document
+                openDocumentModal(decodedFileToLoad, documentToOpen.Title);
+            } else {
+                console.warn(`Deep link: Document with file path "${decodedFileToLoad}" not found in data.`);
+                // You might want to display a message to the user here
+            }
+        }
+    }
+    // --- END NEW FUNCTION ---
+
+}); // End of DOMContentLoaded listener
