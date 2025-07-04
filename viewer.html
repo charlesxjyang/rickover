@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document Viewer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    #loader {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+  <div class="max-w-5xl mx-auto p-6">
+    <a href="/" class="text-blue-600 underline text-sm">&larr; Back to Archive</a>
+    <h1 class="text-2xl font-bold mb-4 mt-2">Document Viewer</h1>
+    
+    <div id="loader" class="text-center text-gray-500 mb-4">Loading...</div>
+
+    <div id="viewerContainer" class="rounded shadow bg-white">
+      <!-- iframe or pre will be injected here -->
+    </div>
+  </div>
+
+  <script>
+    function getParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    const docUrl = getParam('doc');
+    const container = document.getElementById('viewerContainer');
+    const loader = document.getElementById('loader');
+
+    if (!docUrl) {
+      container.innerHTML = '<p class="text-red-600">No document specified.</p>';
+    } else {
+      loader.style.display = 'block';
+      const isPDF = docUrl.endsWith('.pdf');
+      const isTXT = docUrl.endsWith('.txt');
+
+      if (isPDF) {
+        const iframe = document.createElement('iframe');
+        iframe.src = docUrl;
+        iframe.className = 'w-full h-[80vh] rounded';
+        iframe.onload = () => loader.style.display = 'none';
+        container.appendChild(iframe);
+      } else if (isTXT) {
+        fetch(docUrl)
+          .then(res => res.text())
+          .then(text => {
+            const pre = document.createElement('pre');
+            pre.className = 'whitespace-pre-wrap p-4 text-sm overflow-y-auto max-h-[80vh]';
+            pre.textContent = text;
+            loader.style.display = 'none';
+            container.appendChild(pre);
+          })
+          .catch(err => {
+            loader.style.display = 'none';
+            container.innerHTML = '<p class="text-red-600">Failed to load document.</p>';
+          });
+      } else {
+        container.innerHTML = '<p class="text-yellow-700">Unsupported file type.</p>';
+      }
+    }
+  </script>
+</body>
+</html>
