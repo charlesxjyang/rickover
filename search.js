@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let i = startIndex; i < endIndex; i++) {
             const doc = dataToDisplay[i];
             const row = document.createElement('tr');
-            console.log("Debugging Doc:", doc.Title, "file_pdf:", doc.file_pdf, "url_OCR:", doc.url_OCR, "Type of url_OCR:", typeof doc.url_OCR);
+            console.log("Debugging Doc:", doc.Title, "file_pdf:", doc.file_pdf, "file_OCR:", doc.file_OCR, "Type of file_OCR:", typeof doc.file_OCR);
 
             // First 3 columns via innerHTML
             row.innerHTML = `
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let linksHtml = [];
 
             let fullPdfUrl = doc.file_pdf;
-            let fullOcrUrl = doc.url_OCR;
+            let fullOcrUrl = doc.file_OCR;
 
             const s3PathEncodedForUrl = encodeURIComponent(fullPdfUrl);
             const titleEncodedForUrl = encodeURIComponent(doc.Title || '');
@@ -270,12 +270,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const documentToOpen = fullData.find(doc => {
                 // --- UNCOMMENT AND MODIFY IF YOUR MANIFEST.JSON HAS RELATIVE PATHS ---
                 // const docPdfUrl = doc.file_pdf ? (s3BaseUrl + doc.file_pdf) : null;
-                // const docOcrUrl = doc.url_OCR ? (s3BaseUrl + doc.url_OCR) : null;
+                // const docOcrUrl = doc.file_OCR ? (s3BaseUrl + doc.file_OCR) : null;
                 // return docPdfUrl === decodedFileToLoad || docOcrUrl === decodedFileToLoad;
                 // --- END UNCOMMENT SECTION ---
 
-                // If doc.file_pdf and doc.url_OCR are already full S3 URLs:
-                return doc.file_pdf === decodedFileToLoad || doc.url_OCR === decodedFileToLoad;
+                // If doc.file_pdf and doc.file_OCR are already full S3 URLs:
+                return doc.file_pdf === decodedFileToLoad || doc.file_OCR === decodedFileToLoad;
             });
 
 
