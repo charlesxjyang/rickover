@@ -36,3 +36,70 @@ a {
 a:hover {
   color: #1e40af; /* Tailwind's blue-800 */
 }
+
+/* Custom styles for the modal */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75); /* Dark semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's on top of everything */
+  opacity: 0; /* Start hidden */
+  visibility: hidden; /* Start hidden */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  position: relative;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  width: 90%; /* Responsive width */
+  max-width: 1000px; /* Max width for larger screens */
+  height: 90%; /* Responsive height */
+  max-height: 80vh; /* Max height for larger screens */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Hide any overflow from iframe or other content */
+}
+
+.modal-iframe-container {
+  flex-grow: 1; /* Make the iframe container take up available space */
+  overflow: hidden; /* Hide scrollbars of the container if iframe has its own */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px; /* Ensure some height for loading message */
+}
+
+.modal-iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #374151; /* Tailwind gray-700 */
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001; /* Above modal content */
+}
