@@ -114,13 +114,13 @@ document.addEventListener('DOMContentLoaded', () => {
             );
         
             // The OCR (TXT) files will also load in the iframe, just as raw text
-            const s3PathEncodedForUrl = encodeURIComponent(fullOcrUrl);
-            const titleEncodedForUrl = encodeURIComponent(doc.Title || '');
+            const s3PathEncodedForUrlOCR = encodeURIComponent(fullOcrUrl);
+            const titleEncodedForUrlOCR = encodeURIComponent(doc.Title || '');
             if (fullPdfUrl) { // Add a separator if PDF link already exists
                 linksHtml.push(' | ');
             }
             linksHtml.push(
-                `<a href="?file=${s3PathEncodedForUrl}" class="text-blue-600 underline document-link" data-s3-url="${s3PathEncodedForUrl}" data-document-title="${titleEncodedForUrl}">OCR</a>`
+                `<a href="?file=${s3PathEncodedForUrlOCR}" class="text-blue-600 underline document-link" data-s3-url="${s3PathEncodedForUrlOCR}" data-document-title="${titleEncodedForUrlOCR}">OCR</a>`
             );
             
             linksCell.innerHTML = linksHtml.join(''); // Removed extra ' | ' join as it's now handled conditionally
