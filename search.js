@@ -107,24 +107,22 @@ document.addEventListener('DOMContentLoaded', () => {
             let fullPdfUrl = doc.file_pdf;
             let fullOcrUrl = doc.url_OCR;
 
-            if (fullPdfUrl) {
-                const s3PathEncodedForUrl = encodeURIComponent(fullPdfUrl);
-                const titleEncodedForUrl = encodeURIComponent(doc.Title || '');
-                linksHtml.push(
-                    `<a href="?file=${s3PathEncodedForUrl}" class="text-blue-600 underline document-link" data-s3-url="${s3PathEncodedForUrl}" data-document-title="${titleEncodedForUrl}">PDF</a>`
-                );
+            const s3PathEncodedForUrl = encodeURIComponent(fullPdfUrl);
+            const titleEncodedForUrl = encodeURIComponent(doc.Title || '');
+            linksHtml.push(
+                `<a href="?file=${s3PathEncodedForUrl}" class="text-blue-600 underline document-link" data-s3-url="${s3PathEncodedForUrl}" data-document-title="${titleEncodedForUrl}">PDF</a>`
+            );
+        
+            // The OCR (TXT) files will also load in the iframe, just as raw text
+            const s3PathEncodedForUrl = encodeURIComponent(fullOcrUrl);
+            const titleEncodedForUrl = encodeURIComponent(doc.Title || '');
+            if (fullPdfUrl) { // Add a separator if PDF link already exists
+                linksHtml.push(' | ');
             }
-            if (fullOcrUrl) {
-                // The OCR (TXT) files will also load in the iframe, just as raw text
-                const s3PathEncodedForUrl = encodeURIComponent(fullOcrUrl);
-                const titleEncodedForUrl = encodeURIComponent(doc.Title || '');
-                if (fullPdfUrl) { // Add a separator if PDF link already exists
-                    linksHtml.push(' | ');
-                }
-                linksHtml.push(
-                    `<a href="?file=${s3PathEncodedForUrl}" class="text-blue-600 underline document-link" data-s3-url="${s3PathEncodedForUrl}" data-document-title="${titleEncodedForUrl}">OCR</a>`
-                );
-            }
+            linksHtml.push(
+                `<a href="?file=${s3PathEncodedForUrl}" class="text-blue-600 underline document-link" data-s3-url="${s3PathEncodedForUrl}" data-document-title="${titleEncodedForUrl}">OCR</a>`
+            );
+            
             linksCell.innerHTML = linksHtml.join(''); // Removed extra ' | ' join as it's now handled conditionally
 
             row.appendChild(sourceCell);
