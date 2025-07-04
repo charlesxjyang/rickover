@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let i = startIndex; i < endIndex; i++) {
             const doc = dataToDisplay[i];
             const row = document.createElement('tr');
+            console.log("Debugging Doc:", doc.Title, "file_pdf:", doc.file_pdf, "url_OCR:", doc.url_OCR, "Type of url_OCR:", typeof doc.url_OCR);
 
             // First 3 columns via innerHTML
             row.innerHTML = `
@@ -105,15 +106,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             let fullPdfUrl = doc.file_pdf;
             let fullOcrUrl = doc.url_OCR;
-
-            // --- UNCOMMENT IF YOUR MANIFEST.JSON HAS RELATIVE PATHS FOR PDF/OCR ---
-            // if (fullPdfUrl && !fullPdfUrl.startsWith('http')) {
-            //     fullPdfUrl = s3BaseUrl + fullPdfUrl;
-            // }
-            // if (fullOcrUrl && !fullOcrUrl.startsWith('http')) {
-            //     fullOcrUrl = s3BaseUrl + fullOcrUrl;
-            // }
-            // --- END UNCOMMENT SECTION ---
 
             if (fullPdfUrl) {
                 const s3PathEncodedForUrl = encodeURIComponent(fullPdfUrl);
