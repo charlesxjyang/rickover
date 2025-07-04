@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => { // <--- START OF DOMContentLoaded WRAPPER
 let fuse;
 let fullData = [];
 let displayedData = [];
@@ -238,3 +239,4 @@ fetch('manifest.json')
         document.querySelector('#resultsBody').innerHTML =
             '<tr><td colspan="5" class="py-4 text-red-600 text-center">Failed to load data. Please check console for details.</td></tr>';
     });
+}); // <--- END OF DOMContentLoaded WRAPPER
