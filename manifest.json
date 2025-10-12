@@ -4,7 +4,7 @@
     "file_OCR": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Some+Thoughts+on+the+Future+of+the+United+States+Government+by+Admiral+H.+G.+Rickover,+USN.txt",
     "Summary": "Admiral H. G. Rickover's 1975 address offers a profound critique and a bold vision for the future of American democracy, arguing that the nation must reassess its governmental machinery to avoid faltering amidst changing conditions. Rickover traces democracies from prehistoric tribes to ancient Athens (citing Plato's ideal of 5,040 citizens), explaining how early American leaders like Hamilton, Jay, and Madison drew upon this history to form the Constitution. He contends that federal power has become over-centralized, shifting to the executive and judicial branches and creating a disconnect with citizens, particularly as the nation faces declining natural wealth, rising energy costs (highlighted by the 1952 Materials Policy Commission and 1973 oil embargo), and the influence of over 2.5 million commercial corporations compared to just six in 1787. To combat this, Rickover proposes a radical solution: drastically prune federal responsibilities, divide the U.S. into six or seven groups of states, each with broad autonomy over domestic matters like education and welfare, while confining the federal government primarily to military, foreign affairs, and foreign trade, all to be achieved via a Constitutional Convention demanding the highest form of statesmanship.",
     "Source": "USNA Archives Box 27",
-    "Year": 1952,
+    "Year": 1975,
     "Type": "Speech",
     "Title": "Some Thoughts on the Future of the United States Government by Admiral H. G. Rickover, USN"
   },
@@ -40,9 +40,9 @@
     "file_OCR": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Amending+the+Atomic+Energy+Act+of+1954+-+Exchanging+of+Military+Information+and+Material+With+Allies,+85th+Congress,+27+February+1958.txt",
     "Summary": "Admiral Hyman G. Rickover's testimony before the Joint Committee on Atomic Energy on February 27, 1958, provided a nuanced perspective on amending the Atomic Energy Act of 1954 to facilitate military information exchange with allies. While generally supportive of cooperation with Great Britain to \"conserve the scientific and engineering talents of the two countries,\" Rickover expressed significant frustration with detailed British technical inquiries, arguing they excessively burdened U.S. personnel and diverted focus from their own critical programs. He highlighted the U.S.'s advanced position in nuclear submarine technology compared to the Soviets, assessing a reported 5,000 kilowatt Russian reactor as a \"propaganda stunt.\" Rickover strongly advocated for centralizing all atomic energy information exchange under the Atomic Energy Commission (AEC) due to its stable personnel, contrasting it with the Department of Defense's shifting staff. He also urged extreme caution regarding information transfer to other allies, citing potential security risks and the ease with which such information could be compromised, stressing the need to protect vital military secrets and the U.S.'s \"lead unnecessarily.\" Finally, he called for a principle of \"holistic reciprocity,\" asserting that if the U.S. provides information, it should receive a valuable return, irrespective of an ally's internal or constitutional limitations.",
     "Source": "USNA Archives Box 66",
-    "Year": 1954,
+    "Year": 1958,
     "Type": "Congressional Testimony",
-    "Title": "Amending the Atomic Energy Act of 1954 - Exchanging of Military Information and Material With Allies, 85th Congress, 27 February 1958"
+    "Title": "Amending the Atomic Energy Act of 1954 - Exchanging of Military Information and Material With Allies"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Rickover+1954+Administering+Large+Projects+Speech.PDF",
@@ -58,7 +58,7 @@
     "file_OCR": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Roosevelt+Centennial+News.txt",
     "Summary": "This document details the Theodore Roosevelt Centennial Commission's 1958 press releases, announcing the nationwide celebration of TR's 100th birthday, highlighted by President Eisenhower's call for renewed American citizenship and a special dinner honoring Admiral Hyman G. Rickover and General Alfred M. Gruenther with the Theodore Roosevelt Distinguished Service Medal. Rickover, famously called \"Washington's most bristling and fruitful genius,\" and Gruenther, whose \"soft speaking\" was likened to TR's \"compelling Big Stick,\" were recognized for their pivotal contributions to national defense, embodying Roosevelt's enduring ideals of public service, responsibility, and unwavering effort—qualities celebrated throughout the centennial year to reemphasize responsible citizenship. The releases also cite TR's famous quote, \"The only life worth living is the life of effort...to attain what is worth striving for,\" and list past medal recipients including President Eisenhower, General Douglas MacArthur, and Herbert Hoover, underscoring the prestigious nature of the award and the broad impact of TR's legacy.",
     "Source": "USNA Archives Box 30",
-    "Year": 1955,
+    "Year": 1958,
     "Type": "Speech",
     "Title": "Roosevelt Centennial News"
   },
@@ -427,9 +427,9 @@
     "file_OCR": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Department+of+Defense+Appropriations+for+1962,+87th+Congress,+11+May+1961.txt",
     "Summary": "In his May 1961 testimony to the House Appropriations Subcommittee, Admiral Hyman Rickover provided an update on the nuclear Navy, highlighting the successful operation and increasing reliability of nuclear submarines, with 20 already operational and 33 projected by the end of 1962. He emphasized that nuclear plant costs were decreasing (e.g., Skipjack-type plant costs dropped from $18 million to $9 million, and Nautilus core life increased by 100% while costs decreased by 20%), asserting that nuclear power was unfairly scapegoated for overall rising ship construction costs. Rickover passionately advocated for nuclear surface ships, citing their \"virtually unlimited high-powered endurance\" (a nuclear frigate could travel 150,000-180,000 miles compared to a conventional's <3,000 miles), which offers significant military advantages, despite a higher initial cost (about 1.5 times conventional). He also critiqued Navy management, particularly personnel selection and training for nuclear ships, the inefficiencies in R&D due to lack of continuity and technical expertise, and the Naval Academy's educational approach, which he felt fostered immaturity and failed to adequately train officers. Finally, Rickover condemned the practice of allowing defense contractors to charge advertising costs to the government, arguing it's a waste of money, a source of classified information leaks, and merely glorifies the companies.",
     "Source": "USNA Archives Box 67",
-    "Year": 1962,
+    "Year": 1961,
     "Type": "Congressional Testimony",
-    "Title": "Department of Defense Appropriations for 1962, 87th Congress, 11 May 1961"
+    "Title": "Department of Defense Appropriations for FY1962"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Never+Ending+Challenge.pdf",
@@ -544,7 +544,7 @@
     "file_OCR": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Fact+and+Fiction+in+American+Education.txt",
     "Summary": "In his 1965 speech, \"Fact and Fiction in American Education,\" Admiral H. G. Rickover critically examines the American educational system in the aftermath of the Sputnik challenge, arguing that the nation's response has been \"uncertain\" and \"faltering.\" Rickover contends that misleading statistics and pervasive \"clichés\" create an \"illusory picture\" of American educational achievement, masking significant deficiencies, especially when compared to European systems. He asserts that a European school year offers \"at least a third higher\" educational value, citing better-qualified teachers, more rigorous curricula, and higher student attainment, allowing Europeans to reach the equivalent of a U.S. bachelor's degree in 12-13 years versus America's 16. Rickover supports his claims with striking figures, including a 25% draftee illiteracy rate and the fact that 60% of the U.S. population over 25 had fewer than eleven years of schooling, contrasting these with historical Prussian attendance records and lower illiteracy rates in Germany and Japan. He attributes the stagnation to resistance from \"vested interests\" within the educational establishment and a system run by administrators rather than teachers, ultimately hindering necessary reform.",
     "Source": "USNA Archives Box 29",
-    "Year": 1964,
+    "Year": 1965,
     "Type": "Speech",
     "Title": "Fact and Fiction in American Education"
   },
