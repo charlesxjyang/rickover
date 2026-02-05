@@ -228,6 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Adjust this line if 'data' directly contains the array of documents,
             // or if your JSON has a different key than 'documents'
             fullData = data.documents ? data.documents : data;
+            fullData = fullData.filter(d => d.gemini === true); // Only show Gemini-processed posts
             fullData = fullData.sort(() => Math.random() - 0.5); // Random sort
             displayedData = fullData; // Initial display data is all data
 
