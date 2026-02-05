@@ -162,10 +162,87 @@ def is_ocr_noise(text: str) -> bool:
         r'^\d{1,3}$',                      # Page numbers
         r'^[\s]*$',                         # Whitespace only
         r'^[a-z\d\s\-=\+\.\,]{2,8}$',    # Short garbled text (like "oo 85 oy", "a = oe")
+        # Timestamps from web page saves (e.g. "6/12/2025, 10:48 PM" or "1 of 12 6/12/2025, 10:49 PM")
+        r'^\d{1,2}/\d{1,2}/\d{4},?\s*\d{1,2}:\d{2}\s*(AM|PM)?$',
+        r'^\d{1,2}\s+of\s+\d{1,3}\s+\d{1,2}/\d{1,2}/\d{4}',
+        # Browser UI / reader mode artifacts
+        r'.*Open\s*in\s*Reader.*',
+        r'.*Auto highlighting.*',
+        r'^R\|.*Q[\-\+].*',
+        # URL-only lines (repeated page headers from web saves)
+        r'^.*https?://\S+\.(htm|html|org|com|gov|pdf)\s*$',
+        r'^.*https?:/[A-Za-z]\S+\.(htm|html|org|com|gov)\S*\s*$',
+        # Garbled caps runs (corrupted OCR, 4+ consecutive all-caps words of 5+ chars)
+        r'^[A-Z\s,.\-;:©®@>\d\(\)]+$',
+        # Website names/headers
+        r'^.*[Ll][ée]aders\.org.*$',
+        r'^Growing Leaders for the Public Service$',
+        # Social media / Substack artifacts
+        r'^@\s*\d+\s*O\s*\d+.*Share',
+        r'^\.\s*\d\)\s*ae\s+ise\s+gettyimages',
+        r'^G\d+\s+claude\s+berube',
     ]
     for pattern in noise_patterns:
         if re.match(pattern, stripped):
             return True
+    return False
+
+
+def is_repeated_header(text: str) -> bool:
+    """Check if paragraph is a repeated page header from web-saved PDFs."""
+    stripped = text.strip()
+    # Lines that are title + URL (repeated on each page of web-saved PDFs)
+    if re.search(r'https?://?[A-Za-z]?\S+\.(htm|html|org|com|gov)', stripped):
+        # If the line is mostly a URL or title+URL, it's a header
+        url_match = re.search(r'https?://\S+', stripped)
+        if url_match:
+            non_url = stripped[:url_match.start()].strip() + stripped[url_match.end():].strip()
+            # If what's left is short (just a title), it's a repeated header
+            if len(non_url) < 100:
+                return True
+    return False
+
+
+def is_boilerplate(text: str) -> bool:
+    """Check if text is a boilerplate disclaimer/copyright/header from speech PDFs."""
+    lower = text.lower().strip()
+    patterns = [
+        r'this speech reflects the views',
+        r'does not\s+.*necessarily reflect the views',
+        r'copyright\s+\d{4}',
+        r'copyricht\s+\d{4}',  # OCR misspelling
+        r'no permission needed for newspaper',
+        r'above copyright notice',
+        r'if most of speech reprinted',
+        r'department of the navy',
+        r'department of energy',
+        r'for official use only',
+        r'not for publication',
+        r'embargoed.*until',
+        r'advance\s+text',
+        r'delivery\s*copy',
+        r'check\s+against\s+delivery',
+        r'as\s+prepared\s+for\s+delivery',
+    ]
+    for pattern in patterns:
+        if re.search(pattern, lower):
+            return True
+    return False
+
+
+def has_garbled_caps(text: str) -> bool:
+    """Check if text contains garbled ALL CAPS runs (corrupted OCR from web saves)."""
+    # Look for runs of 4+ consecutive ALL-CAPS words of 4+ chars each
+    words = text.split()
+    caps_run = 0
+    for w in words:
+        clean = re.sub(r'[^A-Za-z]', '', w)
+        if len(clean) >= 4 and clean.isupper():
+            caps_run += 1
+            if caps_run >= 4:
+                return True
+        else:
+            caps_run = 0
     return False
 
 
@@ -200,6 +277,23 @@ def clean_ocr_div(ocr_html: str) -> str:
         # Skip page numbers and OCR noise
         if is_page_number(plain) or is_ocr_noise(plain):
             continue
+
+        # Skip repeated web-page headers (title + URL combos)
+        if is_repeated_header(plain):
+            continue
+
+        # Skip boilerplate disclaimers and copyright notices
+        if is_boilerplate(plain):
+            continue
+
+        # Skip paragraphs that are entirely garbled caps (corrupted OCR)
+        if has_garbled_caps(plain) and len(plain) < 200:
+            # Only skip if the paragraph is short-ish (long ones might have real content mixed in)
+            alpha_chars = [c for c in plain if c.isalpha()]
+            if alpha_chars:
+                upper_ratio = sum(1 for c in alpha_chars if c.isupper()) / len(alpha_chars)
+                if upper_ratio > 0.8:
+                    continue
 
         # Strip leading page numbers embedded in paragraphs (e.g. "4\nOur people...")
         text = re.sub(r'^\d{1,3}\s*<br>\s*', '', text)
