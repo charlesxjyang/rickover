@@ -6,7 +6,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1975,
     "Type": "Speech",
-    "Title": "Some Thoughts on the Future of the United States Government by Admiral H. G. Rickover, USN"
+    "Title": "Some Thoughts on the Future of the United States Government by Admiral H. G. Rickover, USN",
+    "blog_page": "posts/some-thoughts-on-the-future-of-the-united-states-government-by-admiral-h-g-rickover-usn.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Economics+of+Military+Procurement+Part+II.pdf",
@@ -15,7 +16,8 @@
     "Source": "https://www.jec.senate.gov/reports/90th%20Congress/Economics%20of%20Military%20Procurement%20Part%20II%20(432).pdf",
     "Year": 1968,
     "Type": "Congressional Testimony",
-    "Title": "Economics of Military Procurement, Part II"
+    "Title": "Economics of Military Procurement, Part II",
+    "blog_page": "posts/economics-of-military-procurement-part-ii.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Some+Thoughts+on+the+Presidency.pdf",
@@ -24,7 +26,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1952,
     "Type": "Speech",
-    "Title": "Some Thoughts on the Presidency"
+    "Title": "Some Thoughts on the Presidency",
+    "blog_page": "posts/some-thoughts-on-the-presidency.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Paper+Reactor+Memo.pdf",
@@ -33,7 +36,8 @@
     "Source": "https://ecolo.org/documents/documents_in_english/Rickover.pdf",
     "Year": 1953,
     "Type": "Memo",
-    "Title": "Paper Reactor Memo"
+    "Title": "Paper Reactor Memo",
+    "blog_page": "posts/paper-reactor-memo.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Amending+the+Atomic+Energy+Act+of+1954+-+Exchanging+of+Military+Information+and+Material+With+Allies,+85th+Congress,+27+February+1958.pdf",
@@ -42,7 +46,8 @@
     "Source": "USNA Archives Box 66",
     "Year": 1958,
     "Type": "Congressional Testimony",
-    "Title": "Amending the Atomic Energy Act of 1954 - Exchanging of Military Information and Material With Allies"
+    "Title": "Amending the Atomic Energy Act of 1954 - Exchanging of Military Information and Material With Allies",
+    "blog_page": "posts/amending-the-atomic-energy-act-of-1954-exchanging-of-military-information-and-material-with-allies.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Rickover+1954+Administering+Large+Projects+Speech.PDF",
@@ -51,7 +56,8 @@
     "Source": "Other",
     "Year": 1954,
     "Type": "Speech",
-    "Title": "Rickover 1954 Administering Large Projects Speech"
+    "Title": "Rickover 1954 Administering Large Projects Speech",
+    "blog_page": "posts/rickover-1954-administering-large-projects-speech.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Roosevelt+Centennial+News.pdf",
@@ -60,7 +66,8 @@
     "Source": "USNA Archives Box 30",
     "Year": 1958,
     "Type": "Speech",
-    "Title": "Roosevelt Centennial News"
+    "Title": "Roosevelt Centennial News",
+    "blog_page": "posts/roosevelt-centennial-news.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Training+of+Technical+Personnel+for+Naval+Reactors+Program.pdf",
@@ -69,7 +76,8 @@
     "Source": "USNA Archives Box 66",
     "Year": 1956,
     "Type": "Congressional Testimony",
-    "Title": "Training of Technical Personnel for Naval Reactors Program"
+    "Title": "Training of Technical Personnel for Naval Reactors Program",
+    "blog_page": "posts/training-of-technical-personnel-for-naval-reactors-program.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Authorizing+Legislation,+joint+AEC+hearing,+1957.pdf",
@@ -78,7 +86,8 @@
     "Source": "USNA Archives Box 66",
     "Year": 1957,
     "Type": "Congressional Testimony",
-    "Title": "Authorizing Legislation, joint AEC hearing, 1957"
+    "Title": "Authorizing Legislation, joint AEC hearing, 1957",
+    "blog_page": "posts/authorizing-legislation-joint-aec-hearing-1957.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Progress+Report+on+Naval+Reactor+Program+and+Shippingport+Port,+1957,+AEC+Hearing.pdf",
@@ -87,7 +96,8 @@
     "Source": "USNA Archives Box 66",
     "Year": 1957,
     "Type": "Congressional Testimony",
-    "Title": "Progress Report on Naval Reactor Program and Shippingport Port, 1957, AEC Hearing"
+    "Title": "Progress Report on Naval Reactor Program and Shippingport Port, 1957, AEC Hearing",
+    "blog_page": "posts/progress-report-on-naval-reactor-program-and-shippingport-port-1957-aec-hearing.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Review+of+Naval+Reactor+Program+and+Admiral+Rickover+Award.pdf",
@@ -96,7 +106,8 @@
     "Source": "Other",
     "Year": 1958,
     "Type": "Congressional Testimony",
-    "Title": "Review of Naval Reactor Program and Admiral Rickover Award"
+    "Title": "Review of Naval Reactor Program and Admiral Rickover Award",
+    "blog_page": "posts/review-of-naval-reactor-program-and-admiral-rickover-award.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Nuclear+Frigate+California+Introduction.pdf",
@@ -105,7 +116,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1958,
     "Type": "Speech",
-    "Title": "Nuclear Frigate California Introduction"
+    "Title": "Nuclear Frigate California Introduction",
+    "blog_page": "posts/nuclear-frigate-california-introduction.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Liberty,+Science,+and+Law+Handbook.pdf",
@@ -114,7 +126,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1958,
     "Type": "Speech",
-    "Title": "Liberty, Science, and Law Handbook"
+    "Title": "Liberty, Science, and Law Handbook",
+    "blog_page": "posts/liberty-science-and-law-handbook.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Michael+Pupin+Medal.pdf",
@@ -123,7 +136,8 @@
     "Source": "USNA Archives Box 30",
     "Year": 1958,
     "Type": "Speech",
-    "Title": "Michael Pupin Medal"
+    "Title": "Michael Pupin Medal",
+    "blog_page": "posts/michael-pupin-medal.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/CBS+News+Small+World.pdf",
@@ -132,7 +146,8 @@
     "Source": "USNA Archives Box 30",
     "Year": 1958,
     "Type": "Interview",
-    "Title": "CBS News Small World"
+    "Title": "CBS News Small World",
+    "blog_page": "posts/cbs-news-small-world.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Meet+the+Press.pdf",
@@ -141,7 +156,8 @@
     "Source": "USNA Archives Box 30",
     "Year": 1958,
     "Type": "Speech",
-    "Title": "Meet the Press"
+    "Title": "Meet the Press",
+    "blog_page": "posts/meet-the-press.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Meaning+of+Nautilus+Polar+Voyage.pdf",
@@ -150,7 +166,8 @@
     "Source": "USNA Archives Box 30",
     "Year": 1958,
     "Type": "Speech",
-    "Title": "Meaning of Nautilus Polar Voyage"
+    "Title": "Meaning of Nautilus Polar Voyage",
+    "blog_page": "posts/meaning-of-nautilus-polar-voyage.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Bicentennial+Science+Award+for+City+College.pdf",
@@ -159,7 +176,8 @@
     "Source": "USNA Archives Box 30",
     "Year": 1958,
     "Type": "Speech",
-    "Title": "Bicentennial Science Award for City College"
+    "Title": "Bicentennial Science Award for City College",
+    "blog_page": "posts/bicentennial-science-award-for-city-college.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Astronautics+and+Space+Explorataion,+85th+Congress,+18+April+1958.pdf",
@@ -168,7 +186,8 @@
     "Source": "USNA Archives Box 66",
     "Year": 1958,
     "Type": "Congressional Testimony",
-    "Title": "Astronautics and Space Explorataion, 85th Congress, 18 April 1958"
+    "Title": "Astronautics and Space Explorataion, 85th Congress, 18 April 1958",
+    "blog_page": "posts/astronautics-and-space-explorataion-85th-congress-18-april-1958.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Education+-+Our+First+Line+of+Defense.pdf",
@@ -177,7 +196,8 @@
     "Source": "USNA Archives Box 30",
     "Year": 1958,
     "Type": "Speech",
-    "Title": "Education - Our First Line of Defense"
+    "Title": "Education - Our First Line of Defense",
+    "blog_page": "posts/education-our-first-line-of-defense.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Theodore+Roosevelt+Centennial+Speech.pdf",
@@ -186,7 +206,8 @@
     "Source": "USNA Archives Box 30",
     "Year": 1958,
     "Type": "Speech",
-    "Title": "Theodore Roosevelt Centennial Speech"
+    "Title": "Theodore Roosevelt Centennial Speech",
+    "blog_page": "posts/theodore-roosevelt-centennial-speech.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Preliminary+Remarks+of+Admiral+H.+G.+Rickover,+U.+S,+Navy+at+Charleston,+South+Carolina.pdf",
@@ -195,7 +216,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1958,
     "Type": "Speech",
-    "Title": "Preliminary Remarks of Admiral H. G. Rickover, U. S, Navy at Charleston, South Carolina"
+    "Title": "Preliminary Remarks of Admiral H. G. Rickover, U. S, Navy at Charleston, South Carolina",
+    "blog_page": "posts/preliminary-remarks-of-admiral-h-g-rickover-u-s-navy-at-charleston-south-carolina.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Our+Naval+Revolution.pdf",
@@ -204,7 +226,8 @@
     "Source": "USNA Archives Box 30",
     "Year": 1959,
     "Type": "Speech",
-    "Title": "Our Naval Revolution"
+    "Title": "Our Naval Revolution",
+    "blog_page": "posts/our-naval-revolution.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Role+of+Professional+Man.pdf",
@@ -213,7 +236,8 @@
     "Source": "USNA Archives Box 30",
     "Year": 1959,
     "Type": "Speech",
-    "Title": "Role of Professional Man"
+    "Title": "Role of Professional Man",
+    "blog_page": "posts/role-of-professional-man.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Shippingport+Lessons+Learned.pdf",
@@ -222,7 +246,8 @@
     "Source": "USNA Archives Box 30",
     "Year": 1959,
     "Type": "Speech",
-    "Title": "Shippingport Lessons Learned"
+    "Title": "Shippingport Lessons Learned",
+    "blog_page": "posts/shippingport-lessons-learned.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Rickover+and+Education.pdf",
@@ -231,7 +256,8 @@
     "Source": "USNA Archives Box 30",
     "Year": 1959,
     "Type": "Speech",
-    "Title": "Rickover and Education"
+    "Title": "Rickover and Education",
+    "blog_page": "posts/rickover-and-education.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Role+of+the+Critic.pdf",
@@ -240,7 +266,8 @@
     "Source": "USNA Archives Box 30",
     "Year": 1959,
     "Type": "Speech",
-    "Title": "Role of the Critic"
+    "Title": "Role of the Critic",
+    "blog_page": "posts/role-of-the-critic.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Illusions+Cost+Too+Much.pdf",
@@ -249,7 +276,8 @@
     "Source": "USNA Archives Box 30",
     "Year": 1959,
     "Type": "Speech",
-    "Title": "Illusions Cost Too Much"
+    "Title": "Illusions Cost Too Much",
+    "blog_page": "posts/illusions-cost-too-much.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Report+on+Russia+by+Vice+Admiral+Hyman+G.+Rickover,+USN,+86th+Congress+1959.pdf",
@@ -258,7 +286,8 @@
     "Source": "USNA Archives Box 66",
     "Year": 1959,
     "Type": "Report",
-    "Title": "Report on Russia by Vice Admiral Hyman G. Rickover, USN, 86th Congress 1959"
+    "Title": "Report on Russia by Vice Admiral Hyman G. Rickover, USN, 86th Congress 1959",
+    "blog_page": "posts/report-on-russia-by-vice-admiral-hyman-g-rickover-usn-86th-congress-1959.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/The+World+of+the+Uneducated.pdf",
@@ -267,7 +296,8 @@
     "Source": "USNA Archives Box 30",
     "Year": 1959,
     "Type": "Speech",
-    "Title": "The World of the Uneducated"
+    "Title": "The World of the Uneducated",
+    "blog_page": "posts/the-world-of-the-uneducated.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Democracy+and+Competence.pdf",
@@ -276,7 +306,8 @@
     "Source": "USNA Archives Box 30",
     "Year": 1959,
     "Type": "Speech",
-    "Title": "Democracy and Competence"
+    "Title": "Democracy and Competence",
+    "blog_page": "posts/democracy-and-competence.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Intellect+in+a+Democracy.pdf",
@@ -285,7 +316,8 @@
     "Source": "USNA Archives Box 30",
     "Year": 1960,
     "Type": "Speech",
-    "Title": "Intellect in a Democracy"
+    "Title": "Intellect in a Democracy",
+    "blog_page": "posts/intellect-in-a-democracy.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Missiles,+Space,+and+Other+Major+Defense+Matters,+86th+Congress,+1960.pdf",
@@ -294,7 +326,8 @@
     "Source": "USNA Archives Box 66",
     "Year": 1960,
     "Type": "Congressional Testimony",
-    "Title": "Missiles, Space, and Other Major Defense Matters, 86th Congress, 1960"
+    "Title": "Missiles, Space, and Other Major Defense Matters, 86th Congress, 1960",
+    "blog_page": "posts/missiles-space-and-other-major-defense-matters-86th-congress-1960.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/In+Defense+of+Truth.pdf",
@@ -303,7 +336,8 @@
     "Source": "USNA Archives Box 30",
     "Year": 1960,
     "Type": "Speech",
-    "Title": "In Defense of Truth"
+    "Title": "In Defense of Truth",
+    "blog_page": "posts/in-defense-of-truth.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Department+of+Defense+Appropriations+for+1960,+86th+Congress,+27+April+1959.pdf",
@@ -312,7 +346,8 @@
     "Source": "USNA Archives Box 66",
     "Year": 1960,
     "Type": "Congressional Testimony",
-    "Title": "Department of Defense Appropriations for 1960, 86th Congress, 27 April 1959"
+    "Title": "Department of Defense Appropriations for 1960, 86th Congress, 27 April 1959",
+    "blog_page": "posts/department-of-defense-appropriations-for-1960-86th-congress-27-april-1959.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Americas+Goals.pdf",
@@ -321,7 +356,8 @@
     "Source": "USNA Archives Box 30",
     "Year": 1960,
     "Type": "Speech",
-    "Title": "Americas Goals"
+    "Title": "Americas Goals",
+    "blog_page": "posts/americas-goals.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/AEC+Authorizing+Legislation+Fiscal+Year+1960,+86th+Congress,+23+March+1959.pdf",
@@ -330,7 +366,8 @@
     "Source": "USNA Archives Box 66",
     "Year": 1960,
     "Type": "Congressional Testimony",
-    "Title": "AEC Authorizing Legislation Fiscal Year 1960, 86th Congress, 23 March 1959"
+    "Title": "AEC Authorizing Legislation Fiscal Year 1960, 86th Congress, 23 March 1959",
+    "blog_page": "posts/aec-authorizing-legislation-fiscal-year-1960-86th-congress-23-march-1959.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Review+of+Progress+in+the+Naval+Reactor+Program+and+Developments+in+the+Polaris+Missle+Submarine+System,+86th+Congress,+9+April+1960.pdf",
@@ -339,7 +376,8 @@
     "Source": "USNA Archives Box 66",
     "Year": 1960,
     "Type": "Congressional Testimony",
-    "Title": "Review of Progress in the Naval Reactor Program and Developments in the Polaris Missle Submarine System, 86th Congress, 9 April 1960"
+    "Title": "Review of Progress in the Naval Reactor Program and Developments in the Polaris Missle Submarine System, 86th Congress, 9 April 1960",
+    "blog_page": "posts/review-of-progress-in-the-naval-reactor-program-and-developments-in-the-polaris-missle-submarine-system-86th-congress-9-.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Wendell+Wilkie+Award.pdf",
@@ -348,7 +386,8 @@
     "Source": "USNA Archives Box 30",
     "Year": 1960,
     "Type": "Speech",
-    "Title": "Wendell Wilkie Award"
+    "Title": "Wendell Wilkie Award",
+    "blog_page": "posts/wendell-wilkie-award.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Impact+of+Nuclear+Propulsion+on+the+Navy.pdf",
@@ -357,7 +396,8 @@
     "Source": "USNA Archives Box 66",
     "Year": 1960,
     "Type": "Congressional Testimony",
-    "Title": "Impact of Nuclear Propulsion on the Navy"
+    "Title": "Impact of Nuclear Propulsion on the Navy",
+    "blog_page": "posts/impact-of-nuclear-propulsion-on-the-navy.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/The+Talented+Mind.pdf",
@@ -366,7 +406,8 @@
     "Source": "USNA Archives Box 30",
     "Year": 1960,
     "Type": "Speech",
-    "Title": "The Talented Mind"
+    "Title": "The Talented Mind",
+    "blog_page": "posts/the-talented-mind.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Authorizing+Appropriations+for+Aircraft,+Missiles,+and+Naval+Vessels+for+the+Armed+Forces,+and+for+Other+Purposes,+87th+Congress,+24+April+1961.pdf",
@@ -375,7 +416,8 @@
     "Source": "USNA Archives Box 67",
     "Year": 1961,
     "Type": "Congressional Testimony",
-    "Title": "Authorizing Appropriations for Aircraft, Missiles, and Naval Vessels for the Armed Forces, and for Other Purposes, 87th Congress, 24 April 1961"
+    "Title": "Authorizing Appropriations for Aircraft, Missiles, and Naval Vessels for the Armed Forces, and for Other Purposes, 87th Congress, 24 April 1961",
+    "blog_page": "posts/authorizing-appropriations-for-aircraft-missiles-and-naval-vessels-for-the-armed-forces-and-for-other-purposes-87th-cong.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/AEC+Authorizing+Legislation+Fiscal+Year+1961,+86th+Congress,+10+March+1960.pdf",
@@ -384,7 +426,8 @@
     "Source": "USNA Archives Box 66",
     "Year": 1961,
     "Type": "Congressional Testimony",
-    "Title": "AEC Authorizing Legislation Fiscal Year 1961, 86th Congress, 10 March 1960"
+    "Title": "AEC Authorizing Legislation Fiscal Year 1961, 86th Congress, 10 March 1960",
+    "blog_page": "posts/aec-authorizing-legislation-fiscal-year-1961-86th-congress-10-march-1960.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Speech+to+French+Ambassador,+Lafayette.pdf",
@@ -393,7 +436,8 @@
     "Source": "USNA Archives Box 30",
     "Year": 1961,
     "Type": "Speech",
-    "Title": "Speech to French Ambassador, Lafayette"
+    "Title": "Speech to French Ambassador, Lafayette",
+    "blog_page": "posts/speech-to-french-ambassador-lafayette.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Statement+of+Vice+Admiral+H.+G.+Rickover+at+Hearings+before+the+Joint+Committee+on+Atomic+Energy,+15+June+1961.pdf",
@@ -402,7 +446,8 @@
     "Source": "USNA Archives Box 67",
     "Year": 1961,
     "Type": "Congressional Testimony",
-    "Title": "Statement of Vice Admiral H. G. Rickover at Hearings before the Joint Committee on Atomic Energy, 15 June 1961"
+    "Title": "Statement of Vice Admiral H. G. Rickover at Hearings before the Joint Committee on Atomic Energy, 15 June 1961",
+    "blog_page": "posts/statement-of-vice-admiral-h-g-rickover-at-hearings-before-the-joint-committee-on-atomic-energy-15-june-1961.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Order+of+Lafeyette+Award+Speech.pdf",
@@ -411,7 +456,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1962,
     "Type": "Speech",
-    "Title": "Order of Lafeyette Award Speech"
+    "Title": "Order of Lafeyette Award Speech",
+    "blog_page": "posts/order-of-lafeyette-award-speech.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Peaceful+Uses+of+Atomic+Energy+Hearing+Before+the+Joint+Committee+of+Atomic+Energy,+10+April+1962.pdf",
@@ -420,7 +466,8 @@
     "Source": "USNA Archives Box 67",
     "Year": 1962,
     "Type": "Congressional Testimony",
-    "Title": "Peaceful Uses of Atomic Energy Hearing Before the Joint Committee of Atomic Energy, 10 April 1962"
+    "Title": "Peaceful Uses of Atomic Energy Hearing Before the Joint Committee of Atomic Energy, 10 April 1962",
+    "blog_page": "posts/peaceful-uses-of-atomic-energy-hearing-before-the-joint-committee-of-atomic-energy-10-april-1962.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Department+of+Defense+Appropriations+for+1962,+87th+Congress,+11+May+1961.pdf",
@@ -429,7 +476,8 @@
     "Source": "USNA Archives Box 67",
     "Year": 1961,
     "Type": "Congressional Testimony",
-    "Title": "Department of Defense Appropriations for FY1962"
+    "Title": "Department of Defense Appropriations for FY1962",
+    "blog_page": "posts/department-of-defense-appropriations-for-fy1962.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Never+Ending+Challenge.pdf",
@@ -438,7 +486,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1962,
     "Type": "Speech",
-    "Title": "Never Ending Challenge"
+    "Title": "Never Ending Challenge",
+    "blog_page": "posts/never-ending-challenge.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/AEC+Authorizing+Legislation,+Fiscal+Year+1963,+18+May+1962.pdf",
@@ -447,7 +496,8 @@
     "Source": "USNA Archives Box 67",
     "Year": 1963,
     "Type": "Congressional Testimony",
-    "Title": "AEC Authorizing Legislation, Fiscal Year 1963, 18 May 1962"
+    "Title": "AEC Authorizing Legislation, Fiscal Year 1963, 18 May 1962",
+    "blog_page": "posts/aec-authorizing-legislation-fiscal-year-1963-18-may-1962.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Launching+USS+Narwhal,+introducing+Senator+Pastore.pdf",
@@ -456,7 +506,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1963,
     "Type": "Speech",
-    "Title": "Launching USS Narwhal, introducing Senator Pastore"
+    "Title": "Launching USS Narwhal, introducing Senator Pastore",
+    "blog_page": "posts/launching-uss-narwhal-introducing-senator-pastore.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Nuclear+Propulsion+for+Naval+Surface+Vessels,+88th+Congress,+December+1963.pdf",
@@ -465,7 +516,8 @@
     "Source": "USNA Archives Box 67",
     "Year": 1963,
     "Type": "Congressional Testimony",
-    "Title": "Nuclear Propulsion for Naval Surface Vessels, 88th Congress, December 1963"
+    "Title": "Nuclear Propulsion for Naval Surface Vessels, 88th Congress, December 1963",
+    "blog_page": "posts/nuclear-propulsion-for-naval-surface-vessels-88th-congress-december-1963.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Lets+Really+Educate+our+Children.pdf",
@@ -474,7 +526,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1963,
     "Type": "Speech",
-    "Title": "Lets Really Educate our Children"
+    "Title": "Lets Really Educate our Children",
+    "blog_page": "posts/lets-really-educate-our-children.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/2+Speeches+in+Switzerland+MNG+school.pdf",
@@ -483,7 +536,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1963,
     "Type": "Speech",
-    "Title": "2 Speeches in Switzerland MNG school"
+    "Title": "2 Speeches in Switzerland MNG school",
+    "blog_page": "posts/2-speeches-in-switzerland-mng-school.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Individual+in+a+Free+Society.pdf",
@@ -492,7 +546,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1963,
     "Type": "Speech",
-    "Title": "Individual in a Free Society"
+    "Title": "Individual in a Free Society",
+    "blog_page": "posts/individual-in-a-free-society.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Technology+and+Democratic+Institutions.pdf",
@@ -501,7 +556,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1963,
     "Type": "Speech",
-    "Title": "Technology and Democratic Institutions"
+    "Title": "Technology and Democratic Institutions",
+    "blog_page": "posts/technology-and-democratic-institutions.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Management+of+the+Naval+Reactor+Program,+88th+Congress,+15+August+1963.pdf",
@@ -510,7 +566,8 @@
     "Source": "USNA Archives Box 67",
     "Year": 1963,
     "Type": "Congressional Testimony",
-    "Title": "Management of the Naval Reactor Program, 88th Congress, 15 August 1963"
+    "Title": "Management of the Naval Reactor Program, 88th Congress, 15 August 1963",
+    "blog_page": "posts/management-of-the-naval-reactor-program-88th-congress-15-august-1963.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Decline+of+the+Individual+-+Post.pdf",
@@ -519,7 +576,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1963,
     "Type": "Speech",
-    "Title": "Decline of the Individual - Post"
+    "Title": "Decline of the Individual - Post",
+    "blog_page": "posts/decline-of-the-individual-post.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Nuclear+Propulsion+for+Naval+Surface+Vessels,+88th+Congress,+October+30,+31+and+November+13,+1963.pdf",
@@ -528,7 +586,8 @@
     "Source": "USNA Archives Box 67",
     "Year": 1963,
     "Type": "Congressional Testimony",
-    "Title": "Nuclear Propulsion for Naval Surface Vessels, 88th Congress, October 30, 31 and November 13, 1963"
+    "Title": "Nuclear Propulsion for Naval Surface Vessels, 88th Congress, October 30, 31 and November 13, 1963",
+    "blog_page": "posts/nuclear-propulsion-for-naval-surface-vessels-88th-congress-october-30-31-and-november-13-1963.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Testimony+on+Loss+of+the+USS+Thresher.pdf",
@@ -537,7 +596,8 @@
     "Source": "https://www.nr-ha.org/books-sources/1963-%26-1964---the-loss-of-the-uss-thresher-congress-testimony",
     "Year": 1964,
     "Type": "Congressional Testimony",
-    "Title": "Testimony on Loss of the USS Thresher"
+    "Title": "Testimony on Loss of the USS Thresher",
+    "blog_page": "posts/testimony-on-loss-of-the-uss-thresher.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Fact+and+Fiction+in+American+Education.pdf",
@@ -546,7 +606,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1965,
     "Type": "Speech",
-    "Title": "Fact and Fiction in American Education"
+    "Title": "Fact and Fiction in American Education",
+    "blog_page": "posts/fact-and-fiction-in-american-education.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/The+Kroll+Zirconium+Medal+Award+Banquet+Pamphlet.pdf",
@@ -555,7 +616,8 @@
     "Source": "USNA Archives Box 28",
     "Year": 1964,
     "Type": "Speech",
-    "Title": "The Kroll Zirconium Medal Award Banquet Pamphlet"
+    "Title": "The Kroll Zirconium Medal Award Banquet Pamphlet",
+    "blog_page": "posts/the-kroll-zirconium-medal-award-banquet-pamphlet.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+by+LBJ+for+Rickover+Fermi+Award+Ceremony.pdf",
@@ -564,7 +626,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1964,
     "Type": "Speech",
-    "Title": "Remarks by LBJ for Rickover Fermi Award Ceremony"
+    "Title": "Remarks by LBJ for Rickover Fermi Award Ceremony",
+    "blog_page": "posts/remarks-by-lbj-for-rickover-fermi-award-ceremony.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Nuclear+Power+and+Bremerton.pdf",
@@ -573,7 +636,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1964,
     "Type": "Speech",
-    "Title": "Nuclear Power and Bremerton"
+    "Title": "Nuclear Power and Bremerton",
+    "blog_page": "posts/nuclear-power-and-bremerton.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Bremerton,+honoring+NavSec+and+Senator.pdf",
@@ -582,7 +646,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1964,
     "Type": "Speech",
-    "Title": "Bremerton, honoring NavSec and Senator"
+    "Title": "Bremerton, honoring NavSec and Senator",
+    "blog_page": "posts/bremerton-honoring-navsec-and-senator.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Christopher+Columbus+Award+Ceremony.pdf",
@@ -591,7 +656,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1964,
     "Type": "Speech",
-    "Title": "Christopher Columbus Award Ceremony"
+    "Title": "Christopher Columbus Award Ceremony",
+    "blog_page": "posts/christopher-columbus-award-ceremony.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Technology+and+the+Citizen.pdf",
@@ -600,7 +666,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1965,
     "Type": "Speech",
-    "Title": "Technology and the Citizen"
+    "Title": "Technology and the Citizen",
+    "blog_page": "posts/technology-and-the-citizen.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Meaning+of+a+University.pdf",
@@ -609,7 +676,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1965,
     "Type": "Speech",
-    "Title": "Meaning of a University"
+    "Title": "Meaning of a University",
+    "blog_page": "posts/meaning-of-a-university.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+after+Bremerton+Propulsion+Sea+Trials.pdf",
@@ -618,7 +686,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1965,
     "Type": "Speech",
-    "Title": "Remarks after Bremerton Propulsion Sea Trials"
+    "Title": "Remarks after Bremerton Propulsion Sea Trials",
+    "blog_page": "posts/remarks-after-bremerton-propulsion-sea-trials.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Significance+of+Electricity.pdf",
@@ -627,7 +696,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1965,
     "Type": "Speech",
-    "Title": "Significance of Electricity"
+    "Title": "Significance of Electricity",
+    "blog_page": "posts/significance-of-electricity.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Education+and+Patriotism.pdf",
@@ -636,7 +706,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1966,
     "Type": "Speech",
-    "Title": "Education and Patriotism"
+    "Title": "Education and Patriotism",
+    "blog_page": "posts/education-and-patriotism.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Energy+Speech+at+Athens+Propeller+Club.pdf",
@@ -645,7 +716,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1966,
     "Type": "Speech",
-    "Title": "Energy Speech at Athens Propeller Club"
+    "Title": "Energy Speech at Athens Propeller Club",
+    "blog_page": "posts/energy-speech-at-athens-propeller-club.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Narwhal+Introduction.pdf",
@@ -654,7 +726,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1966,
     "Type": "Speech",
-    "Title": "Narwhal Introduction"
+    "Title": "Narwhal Introduction",
+    "blog_page": "posts/narwhal-introduction.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Congressman+Stratton+visit+to+Knolls+Atomic+Lab.pdf",
@@ -663,7 +736,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1966,
     "Type": "Speech",
-    "Title": "Congressman Stratton visit to Knolls Atomic Lab"
+    "Title": "Congressman Stratton visit to Knolls Atomic Lab",
+    "blog_page": "posts/congressman-stratton-visit-to-knolls-atomic-lab.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Naval+Nuclear+Propulsion+Program,+26+January+1966.pdf",
@@ -672,7 +746,8 @@
     "Source": "USNA Archives Box 67",
     "Year": 1966,
     "Type": "Congressional Testimony",
-    "Title": "Naval Nuclear Propulsion Program, 26 January 1966"
+    "Title": "Naval Nuclear Propulsion Program, 26 January 1966",
+    "blog_page": "posts/naval-nuclear-propulsion-program-26-january-1966.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/The+Computer+and+Invasion+of+Privacy+89th+Congress,+July+1966-January+1967.pdf",
@@ -681,7 +756,8 @@
     "Source": "USNA Archives Box 67",
     "Year": 1966,
     "Type": "Congressional Testimony",
-    "Title": "The Computer and Invasion of Privacy 89th Congress, July 1966-January 1967"
+    "Title": "The Computer and Invasion of Privacy 89th Congress, July 1966-January 1967",
+    "blog_page": "posts/the-computer-and-invasion-of-privacy-89th-congress-july-1966-january-1967.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Nationsal+Scholastic+Standard.pdf",
@@ -690,7 +766,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1967,
     "Type": "Speech",
-    "Title": "Nationsal Scholastic Standard"
+    "Title": "Nationsal Scholastic Standard",
+    "blog_page": "posts/nationsal-scholastic-standard.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Freedom+and+the+Knowledge+Gap.pdf",
@@ -699,7 +776,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1967,
     "Type": "Speech",
-    "Title": "Freedom and the Knowledge Gap"
+    "Title": "Freedom and the Knowledge Gap",
+    "blog_page": "posts/freedom-and-the-knowledge-gap.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Accounting+Practices+-+Do+They+Protect+the+Public.pdf",
@@ -708,7 +786,8 @@
     "Source": "USNA Archives Box 28",
     "Year": 1968,
     "Type": "Speech",
-    "Title": "Accounting Practices - Do They Protect the Public"
+    "Title": "Accounting Practices - Do They Protect the Public",
+    "blog_page": "posts/accounting-practices-do-they-protect-the-public.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Who+Protects+the+Public.pdf",
@@ -717,7 +796,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1968,
     "Type": "Speech",
-    "Title": "Who Protects the Public"
+    "Title": "Who Protects the Public",
+    "blog_page": "posts/who-protects-the-public.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Hearings+on+Military+Posture+and+S.+3293,+90th+Congress13+June+1968.pdf",
@@ -726,7 +806,8 @@
     "Source": "USNA Archives Box 68",
     "Year": 1968,
     "Type": "Congressional Testimony",
-    "Title": "Hearings on Military Posture and S. 3293, 90th Congress13 June 1968"
+    "Title": "Hearings on Military Posture and S. 3293, 90th Congress13 June 1968",
+    "blog_page": "posts/hearings-on-military-posture-and-s-3293-90th-congress13-june-1968.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/IMG_20250604_0024.pdf",
@@ -735,7 +816,8 @@
     "Source": "USNA Archives Box 66",
     "Year": 1969,
     "Type": "Image",
-    "Title": "IMG_20250604_0024"
+    "Title": "IMG_20250604_0024",
+    "blog_page": "posts/img-20250604-0024.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Humanistic+Technology.pdf",
@@ -744,7 +826,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1969,
     "Type": "Speech",
-    "Title": "Humanistic Technology"
+    "Title": "Humanistic Technology",
+    "blog_page": "posts/humanistic-technology.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/IMG_20250604_0025.pdf",
@@ -753,7 +836,8 @@
     "Source": "USNA Archives Box 66",
     "Year": 1970,
     "Type": "Image",
-    "Title": "IMG_20250604_0025"
+    "Title": "IMG_20250604_0025",
+    "blog_page": "posts/img-20250604-0025.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+before+the+SOS+and+the+Chowder+and+Marching+study+Groups+by+Admiral+H.+C.+Rickover.pdf",
@@ -762,7 +846,8 @@
     "Source": "USNA Archives Box 28",
     "Year": 1970,
     "Type": "Speech",
-    "Title": "Remarks before the SOS and the Chowder and Marching study Groups by Admiral H. C. Rickover"
+    "Title": "Remarks before the SOS and the Chowder and Marching study Groups by Admiral H. C. Rickover",
+    "blog_page": "posts/remarks-before-the-sos-and-the-chowder-and-marching-study-groups-by-admiral-h-c-rickover.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Liberty,+Science,+and+Law.pdf",
@@ -771,7 +856,8 @@
     "Source": "USNA Archives Box 29",
     "Year": 1970,
     "Type": "Speech",
-    "Title": "Liberty, Science, and Law"
+    "Title": "Liberty, Science, and Law",
+    "blog_page": "posts/liberty-science-and-law.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/What+Are+Schools+For.pdf",
@@ -780,7 +866,8 @@
     "Source": "USNA Archives Box 28",
     "Year": 1970,
     "Type": "Speech",
-    "Title": "What Are Schools For"
+    "Title": "What Are Schools For",
+    "blog_page": "posts/what-are-schools-for.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/AEC+Authorizing+Legislation+Fiscal+Year+1971,+91st+Congress,+19+March+1970.pdf",
@@ -789,7 +876,8 @@
     "Source": "USNA Archives Box 68",
     "Year": 1971,
     "Type": "Congressional Testimony",
-    "Title": "AEC Authorizing Legislation Fiscal Year 1971, 91st Congress, 19 March 1970"
+    "Title": "AEC Authorizing Legislation Fiscal Year 1971, 91st Congress, 19 March 1970",
+    "blog_page": "posts/aec-authorizing-legislation-fiscal-year-1971-91st-congress-19-march-1970.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/An+Effective+National+Defense.pdf",
@@ -798,7 +886,8 @@
     "Source": "USNA Archives Box 28",
     "Year": 1971,
     "Type": "Speech",
-    "Title": "An Effective National Defense"
+    "Title": "An Effective National Defense",
+    "blog_page": "posts/an-effective-national-defense.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Energy+-+A+Diminishing+Capital+Resource.pdf",
@@ -807,7 +896,8 @@
     "Source": "USNA Archives Box 28",
     "Year": 1972,
     "Type": "Speech",
-    "Title": "Energy - A Diminishing Capital Resource"
+    "Title": "Energy - A Diminishing Capital Resource",
+    "blog_page": "posts/energy-a-diminishing-capital-resource.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Statement+to+the+Cost+Accounting+Standards+Board+Concerning+a+Proposal+to+Issue+a+Cost+Accounting+Standart+Dealing+with+Depriciation+of+Tangible+Capital+Assets.pdf",
@@ -816,7 +906,8 @@
     "Source": "USNA Archives Box 28",
     "Year": 1973,
     "Type": "Speech",
-    "Title": "Statement to the Cost Accounting Standards Board Concerning a Proposal to Issue a Cost Accounting Standart Dealing with Depriciation of Tangible Capital Assets"
+    "Title": "Statement to the Cost Accounting Standards Board Concerning a Proposal to Issue a Cost Accounting Standart Dealing with Depriciation of Tangible Capital Assets",
+    "blog_page": "posts/statement-to-the-cost-accounting-standards-board-concerning-a-proposal-to-issue-a-cost-accounting-standart-dealing-with-.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Personal+Accountability+in+Financial+Management.pdf",
@@ -825,7 +916,8 @@
     "Source": "USNA Archives Box 28",
     "Year": 1973,
     "Type": "Speech",
-    "Title": "Personal Accountability in Financial Management"
+    "Title": "Personal Accountability in Financial Management",
+    "blog_page": "posts/personal-accountability-in-financial-management.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+by+Adm.+H.+G.+Rickover,+USN+before+the+National+Society+of+Former+Special+Agents+of+the+FBI.pdf",
@@ -834,7 +926,8 @@
     "Source": "USNA Archives Box 28",
     "Year": 1974,
     "Type": "Speech",
-    "Title": "Remarks by Adm. H. G. Rickover, USN before the National Society of Former Special Agents of the FBI"
+    "Title": "Remarks by Adm. H. G. Rickover, USN before the National Society of Former Special Agents of the FBI",
+    "blog_page": "posts/remarks-by-adm-h-g-rickover-usn-before-the-national-society-of-former-special-agents-of-the-fbi.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+of+Sdm.+H.+G.+Rickover,+USN+at+the+Dedication+of+Rickover+Hall+at+the+USNA.pdf",
@@ -843,7 +936,8 @@
     "Source": "USNA Archives Box 28",
     "Year": 1974,
     "Type": "Speech",
-    "Title": "Remarks of Sdm. H. G. Rickover, USN at the Dedication of Rickover Hall at the USNA"
+    "Title": "Remarks of Sdm. H. G. Rickover, USN at the Dedication of Rickover Hall at the USNA",
+    "blog_page": "posts/remarks-of-sdm-h-g-rickover-usn-at-the-dedication-of-rickover-hall-at-the-usna.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Rickover+1974+Role+of+Engineering+Speech.pdf",
@@ -852,7 +946,8 @@
     "Source": "https://www.nr-ha.org/books-sources/speech-the-role-of-engineering-in-the-navy",
     "Year": 1974,
     "Type": "Speech",
-    "Title": "Rickover 1974 Role of Engineering Speech"
+    "Title": "Rickover 1974 Role of Engineering Speech",
+    "blog_page": "posts/rickover-1974-role-of-engineering-speech.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/The+Role+of+Engineering+in+the+Navy.pdf",
@@ -861,7 +956,8 @@
     "Source": "USNA Archives Box 28",
     "Year": 1974,
     "Type": "Speech",
-    "Title": "The Role of Engineering in the Navy"
+    "Title": "The Role of Engineering in the Navy",
+    "blog_page": "posts/the-role-of-engineering-in-the-navy.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/1975+Rickover+Paper+on+Zirconium.pdf",
@@ -870,7 +966,8 @@
     "Source": "https://www.osti.gov/biblio/4240391",
     "Year": 1975,
     "Type": "Report",
-    "Title": "1975 Rickover Paper on Zirconium"
+    "Title": "1975 Rickover Paper on Zirconium",
+    "blog_page": "posts/1975-rickover-paper-on-zirconium.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Acceptance+Speech+for+the+ASTM+William+J.+Kroll+Medal.pdf",
@@ -879,7 +976,8 @@
     "Source": "https://www.nr-ha.org/books-sources/1975---rickover%27s-acceptance-speech-for-the-astm-william-j.-kroll-zirconium-medal",
     "Year": 1975,
     "Type": "Speech",
-    "Title": "Acceptance Speech for the ASTM William J. Kroll Medal"
+    "Title": "Acceptance Speech for the ASTM William J. Kroll Medal",
+    "blog_page": "posts/acceptance-speech-for-the-astm-william-j-kroll-medal.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Nuclear+Warships+and+the+Navys+Future.pdf",
@@ -888,7 +986,8 @@
     "Source": "USNA Archives Box 28",
     "Year": 1975,
     "Type": "Speech",
-    "Title": "Nuclear Warships and the Navys Future"
+    "Title": "Nuclear Warships and the Navys Future",
+    "blog_page": "posts/nuclear-warships-and-the-navys-future.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/A+Humanistic+Technology.pdf",
@@ -897,7 +996,8 @@
     "Source": "USNA Archives Box 28",
     "Year": 1975,
     "Type": "Speech",
-    "Title": "A Humanistic Technology"
+    "Title": "A Humanistic Technology",
+    "blog_page": "posts/a-humanistic-technology.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Business+and+Freedom.pdf",
@@ -906,7 +1006,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1975,
     "Type": "Speech",
-    "Title": "Business and Freedom"
+    "Title": "Business and Freedom",
+    "blog_page": "posts/business-and-freedom.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/The+Decision+to+use+Zirconium+in+Nuclear+Reactors.pdf",
@@ -915,7 +1016,8 @@
     "Source": "USNA Archives Box 28",
     "Year": 1975,
     "Type": "Speech",
-    "Title": "The Decision to use Zirconium in Nuclear Reactors"
+    "Title": "The Decision to use Zirconium in Nuclear Reactors",
+    "blog_page": "posts/the-decision-to-use-zirconium-in-nuclear-reactors.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+by+Adm.+H.+G.+Rickover,+USN+on+Acceptance+of+The+Gideon+Welles+Award.pdf",
@@ -924,7 +1026,8 @@
     "Source": "USNA Archives Box 28",
     "Year": 1975,
     "Type": "Speech",
-    "Title": "Remarks by Adm. H. G. Rickover, USN on Acceptance of The Gideon Welles Award"
+    "Title": "Remarks by Adm. H. G. Rickover, USN on Acceptance of The Gideon Welles Award",
+    "blog_page": "posts/remarks-by-adm-h-g-rickover-usn-on-acceptance-of-the-gideon-welles-award.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+by+Admiral+H.+G.+Rickover,+USN+to+the+Delegates+of+the+National+Youth+Science+Camp.pdf",
@@ -933,7 +1036,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1975,
     "Type": "Speech",
-    "Title": "Remarks by Admiral H. G. Rickover, USN to the Delegates of the National Youth Science Camp"
+    "Title": "Remarks by Admiral H. G. Rickover, USN to the Delegates of the National Youth Science Camp",
+    "blog_page": "posts/remarks-by-admiral-h-g-rickover-usn-to-the-delegates-of-the-national-youth-science-camp.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+on+Acceptance+of+the+Distinguished+American+Award+Presented+by+The+Bar+Association+of+Baltimore+City.pdf",
@@ -942,7 +1046,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1976,
     "Type": "Speech",
-    "Title": "Remarks on Acceptance of the Distinguished American Award Presented by The Bar Association of Baltimore City"
+    "Title": "Remarks on Acceptance of the Distinguished American Award Presented by The Bar Association of Baltimore City",
+    "blog_page": "posts/remarks-on-acceptance-of-the-distinguished-american-award-presented-by-the-bar-association-of-baltimore-city.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+By+Admiral+H.+G.+Rickover,+USN+Upon+Acceptance+of+the+Distinguished+Service.pdf",
@@ -951,7 +1056,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1976,
     "Type": "Speech",
-    "Title": "Remarks By Admiral H. G. Rickover, USN Upon Acceptance of the Distinguished Service"
+    "Title": "Remarks By Admiral H. G. Rickover, USN Upon Acceptance of the Distinguished Service",
+    "blog_page": "posts/remarks-by-admiral-h-g-rickover-usn-upon-acceptance-of-the-distinguished-service.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+on+Acceptance+of+the+Harold+Pender+Award+Presented+by+The+Moore+School+of+Electrical+Engineering,+University+of+Pennsylvania.pdf",
@@ -960,7 +1066,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1976,
     "Type": "Speech",
-    "Title": "Remarks on Acceptance of the Harold Pender Award Presented by The Moore School of Electrical Engineering, University of Pennsylvania"
+    "Title": "Remarks on Acceptance of the Harold Pender Award Presented by The Moore School of Electrical Engineering, University of Pennsylvania",
+    "blog_page": "posts/remarks-on-acceptance-of-the-harold-pender-award-presented-by-the-moore-school-of-electrical-engineering-university-of-p.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Thoughts+on+Man_s+Purpose+in+Life+by+Admiral+H.+G.+Rickover,+U.+S.+navy+at+a+Luncheon+Meeting+of+the+San+Diego+Rotary+Club.pdf",
@@ -969,7 +1076,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1977,
     "Type": "Speech",
-    "Title": "Thoughts on Man_s Purpose in Life by Admiral H. G. Rickover, U. S. navy at a Luncheon Meeting of the San Diego Rotary Club"
+    "Title": "Thoughts on Man_s Purpose in Life by Admiral H. G. Rickover, U. S. navy at a Luncheon Meeting of the San Diego Rotary Club",
+    "blog_page": "posts/thoughts-on-man-s-purpose-in-life-by-admiral-h-g-rickover-u-s-navy-at-a-luncheon-meeting-of-the-san-diego-rotary-club.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+by+Admiral+H.+G.+Rickover,+U.+S.+Navy+at+the+Columbian+Foundation.pdf",
@@ -978,7 +1086,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1977,
     "Type": "Speech",
-    "Title": "Remarks by Admiral H. G. Rickover, U. S. Navy at the Columbian Foundation"
+    "Title": "Remarks by Admiral H. G. Rickover, U. S. Navy at the Columbian Foundation",
+    "blog_page": "posts/remarks-by-admiral-h-g-rickover-u-s-navy-at-the-columbian-foundation.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+by+Admiral+H.+G.+Rickover,+U.+S.+Navy+Concerning+Congressman+Joseph+G.+Minish.pdf",
@@ -987,7 +1096,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1977,
     "Type": "Speech",
-    "Title": "Remarks by Admiral H. G. Rickover, U. S. Navy Concerning Congressman Joseph G. Minish"
+    "Title": "Remarks by Admiral H. G. Rickover, U. S. Navy Concerning Congressman Joseph G. Minish",
+    "blog_page": "posts/remarks-by-admiral-h-g-rickover-u-s-navy-concerning-congressman-joseph-g-minish.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+by+Admiral+H.+G.+Rickover,+U.+S.+Navy+On+the+Occasion+of+the+Commissioning+of+the+USS+TEXAS+(CGN+39).pdf",
@@ -996,7 +1106,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1977,
     "Type": "Speech",
-    "Title": "Remarks by Admiral H. G. Rickover, U. S. Navy On the Occasion of the Commissioning of the USS TEXAS (CGN 39)"
+    "Title": "Remarks by Admiral H. G. Rickover, U. S. Navy On the Occasion of the Commissioning of the USS TEXAS (CGN 39)",
+    "blog_page": "posts/remarks-by-admiral-h-g-rickover-u-s-navy-on-the-occasion-of-the-commissioning-of-the-uss-texas-cgn-39.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/The+Purpose+of+Education.pdf",
@@ -1005,7 +1116,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1977,
     "Type": "Speech",
-    "Title": "The Purpose of Education"
+    "Title": "The Purpose of Education",
+    "blog_page": "posts/the-purpose-of-education.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Three+Mile+Island+Incident+Testimony.pdf",
@@ -1014,7 +1126,8 @@
     "Source": "https://taproot.com/content/wp-content/uploads/2010/09/RickoverCongressionalTestimony.pdf",
     "Year": 1978,
     "Type": "Congressional Testimony",
-    "Title": "Three Mile Island Incident Testimony"
+    "Title": "Three Mile Island Incident Testimony",
+    "blog_page": "posts/three-mile-island-incident-testimony.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/REMARKS+BY+SENATOR+HENRY+M.+JACKSON+At+the+Launching+of+the+Nuclear+Powered+Attack+SuBmarine+BREMERTON+(SSN69S).pdf",
@@ -1023,7 +1136,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1978,
     "Type": "Speech",
-    "Title": "REMARKS BY SENATOR HENRY M. JACKSON At the Launching of the Nuclear Powered Attack SuBmarine BREMERTON (SSN69S)"
+    "Title": "REMARKS BY SENATOR HENRY M. JACKSON At the Launching of the Nuclear Powered Attack SuBmarine BREMERTON (SSN69S)",
+    "blog_page": "posts/remarks-by-senator-henry-m-jackson-at-the-launching-of-the-nuclear-powered-attack-submarine-bremerton-ssn69s.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+by+Admiral+H.+G.+Rickover,+U.+S.+Navy+to+Students+and+Teachers+of+the+Admiral+H.+G.+Rickover+Junior+High+School.pdf",
@@ -1032,7 +1146,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1978,
     "Type": "Speech",
-    "Title": "Remarks by Admiral H. G. Rickover, U. S. Navy to Students and Teachers of the Admiral H. G. Rickover Junior High School"
+    "Title": "Remarks by Admiral H. G. Rickover, U. S. Navy to Students and Teachers of the Admiral H. G. Rickover Junior High School",
+    "blog_page": "posts/remarks-by-admiral-h-g-rickover-u-s-navy-to-students-and-teachers-of-the-admiral-h-g-rickover-junior-high-school.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+of+Admiral+H,+G.+Rickover,+U,+S.+Navy+at+the+Commissioning+of+the+USS+MISSISSIPPI+(CGN+40)+at+Norfolk,+Virginia.pdf",
@@ -1041,7 +1156,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1978,
     "Type": "Speech",
-    "Title": "Remarks of Admiral H, G. Rickover, U, S. Navy at the Commissioning of the USS MISSISSIPPI (CGN 40) at Norfolk, Virginia"
+    "Title": "Remarks of Admiral H, G. Rickover, U, S. Navy at the Commissioning of the USS MISSISSIPPI (CGN 40) at Norfolk, Virginia",
+    "blog_page": "posts/remarks-of-admiral-h-g-rickover-u-s-navy-at-the-commissioning-of-the-uss-mississippi-cgn-40-at-norfolk-virginia.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+of+Admiral+H.+G.+Rickover+about+Education,+U.+S,+Navy+at+Charleston,+South+Carolina.pdf",
@@ -1050,7 +1166,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1978,
     "Type": "Speech",
-    "Title": "Remarks of Admiral H. G. Rickover about Education, U. S, Navy at Charleston, South Carolina"
+    "Title": "Remarks of Admiral H. G. Rickover about Education, U. S, Navy at Charleston, South Carolina",
+    "blog_page": "posts/remarks-of-admiral-h-g-rickover-about-education-u-s-navy-at-charleston-south-carolina.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/CBS+News+Face+the+Nation.pdf",
@@ -1059,7 +1176,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1978,
     "Type": "Interview",
-    "Title": "CBS News Face the Nation"
+    "Title": "CBS News Face the Nation",
+    "blog_page": "posts/cbs-news-face-the-nation.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/1979+Management+Magazine+-+Rickover+on+Management.pdf",
@@ -1068,7 +1186,8 @@
     "Source": "https://www.nr-ha.org/books-sources/management-magazine-rickover-on-management",
     "Year": 1979,
     "Type": "Article",
-    "Title": "1979 Management Magazine - Rickover on Management"
+    "Title": "1979 Management Magazine - Rickover on Management",
+    "blog_page": "posts/1979-management-magazine-rickover-on-management.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Memo+of+Conversation+with+Jimmy+Carter.pdf",
@@ -1077,7 +1196,8 @@
     "Source": "https://claudeberube.substack.com/p/a-fly-on-the-wall",
     "Year": 1979,
     "Type": "Memo",
-    "Title": "Memo of Conversation with Jimmy Carter"
+    "Title": "Memo of Conversation with Jimmy Carter",
+    "blog_page": "posts/memo-of-conversation-with-jimmy-carter.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+By+Admiral+H,+G.+Rickdver.+U.+S.+Navy+TO+THE+Puget+Sound+NJaval+Base+Association,+Inc..pdf",
@@ -1086,7 +1206,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1979,
     "Type": "Speech",
-    "Title": "Remarks By Admiral H, G. Rickdver. U. S. Navy TO THE Puget Sound NJaval Base Association, Inc."
+    "Title": "Remarks By Admiral H, G. Rickdver. U. S. Navy TO THE Puget Sound NJaval Base Association, Inc.",
+    "blog_page": "posts/remarks-by-admiral-h-g-rickdver-u-s-navy-to-the-puget-sound-njaval-base-association-inc.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Rickover+predicts+widening+future+for+Idaho+Falls+NRF.pdf",
@@ -1095,7 +1216,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1979,
     "Type": "Speech",
-    "Title": "Rickover predicts widening future for Idaho Falls NRF"
+    "Title": "Rickover predicts widening future for Idaho Falls NRF",
+    "blog_page": "posts/rickover-predicts-widening-future-for-idaho-falls-nrf.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Environmental+Perspective.pdf",
@@ -1104,7 +1226,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1979,
     "Type": "Speech",
-    "Title": "Environmental Perspective"
+    "Title": "Environmental Perspective",
+    "blog_page": "posts/environmental-perspective.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+By+Admiral+H.+G.+Rickover,+USN+On+Acceptance+Of+The+Harry+S.+Truman+Good+Neighbor+Award.pdf",
@@ -1113,7 +1236,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1979,
     "Type": "Speehc",
-    "Title": "Remarks By Admiral H. G. Rickover, USN On Acceptance Of The Harry S. Truman Good Neighbor Award"
+    "Title": "Remarks By Admiral H. G. Rickover, USN On Acceptance Of The Harry S. Truman Good Neighbor Award",
+    "blog_page": "posts/remarks-by-admiral-h-g-rickover-usn-on-acceptance-of-the-harry-s-truman-good-neighbor-award.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+of+Adm+H.G.+Rickover+U.S.+Navy+At+a+Meeting+of+the+ORDER+OF+5-48.pdf",
@@ -1122,7 +1246,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1979,
     "Type": "Speech",
-    "Title": "Remarks of Adm H.G. Rickover U.S. Navy At a Meeting of the ORDER OF 5-48"
+    "Title": "Remarks of Adm H.G. Rickover U.S. Navy At a Meeting of the ORDER OF 5-48",
+    "blog_page": "posts/remarks-of-adm-hg-rickover-us-navy-at-a-meeting-of-the-order-of-5-48.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Lawyers+versus+Society.pdf",
@@ -1131,7 +1256,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1979,
     "Type": "Speech",
-    "Title": "Lawyers versus Society"
+    "Title": "Lawyers versus Society",
+    "blog_page": "posts/lawyers-versus-society.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Rickover+-+Part+2+Selected+Testimony+&+Speeches.pdf",
@@ -1140,7 +1266,8 @@
     "Source": "https://www.nr-ha.org/books-sources/testimony-significant-rickover-testimony-and-speeches-(1953-1981)",
     "Year": 1979,
     "Type": "Congressional Testimony",
-    "Title": "Rickover - Part 2 Selected Testimony & Speeches"
+    "Title": "Rickover - Part 2 Selected Testimony & Speeches",
+    "blog_page": "posts/rickover-part-2-selected-testimony-speeches.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/REMARKS+BY+ADMIRAL+H-+G-+RICKOVER+BEFORE+THE+95TH+REPUBLICAN+CLUB.pdf",
@@ -1149,7 +1276,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1980,
     "Type": "Speech",
-    "Title": "REMARKS BY ADMIRAL H- G- RICKOVER BEFORE THE 95TH REPUBLICAN CLUB"
+    "Title": "REMARKS BY ADMIRAL H- G- RICKOVER BEFORE THE 95TH REPUBLICAN CLUB",
+    "blog_page": "posts/remarks-by-admiral-h-g-rickover-before-the-95th-republican-club.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/REMARKS+BY+ADMIRAL+H.+G.+RICKOVER+BEFORE+THE+CONGRESSIONAL+RESEARCH+SERVICE+DEFENSE+BREAKFAST+SEMINAR.pdf",
@@ -1158,7 +1286,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1980,
     "Type": "Speech",
-    "Title": "REMARKS BY ADMIRAL H. G. RICKOVER BEFORE THE CONGRESSIONAL RESEARCH SERVICE DEFENSE BREAKFAST SEMINAR"
+    "Title": "REMARKS BY ADMIRAL H. G. RICKOVER BEFORE THE CONGRESSIONAL RESEARCH SERVICE DEFENSE BREAKFAST SEMINAR",
+    "blog_page": "posts/remarks-by-admiral-h-g-rickover-before-the-congressional-research-service-defense-breakfast-seminar.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+at+USS+Arkansas+Propulsion+Sea+Trial.pdf",
@@ -1167,7 +1296,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1980,
     "Type": "Speech",
-    "Title": "Remarks at USS Arkansas Propulsion Sea Trial"
+    "Title": "Remarks at USS Arkansas Propulsion Sea Trial",
+    "blog_page": "posts/remarks-at-uss-arkansas-propulsion-sea-trial.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Summary+of+President+Nixon+Dinner+Conversation.pdf",
@@ -1176,7 +1306,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1980,
     "Type": "Speech",
-    "Title": "Summary of President Nixon Dinner Conversation"
+    "Title": "Summary of President Nixon Dinner Conversation",
+    "blog_page": "posts/summary-of-president-nixon-dinner-conversation.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/SUBJ+Leadership.pdf",
@@ -1185,7 +1316,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1980,
     "Type": "Speech",
-    "Title": "SUBJ Leadership"
+    "Title": "SUBJ Leadership",
+    "blog_page": "posts/subj-leadership.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+at+USS+San+Francisco+Propulsion+Sea+Trial.pdf",
@@ -1194,7 +1326,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1981,
     "Type": "Speech",
-    "Title": "Remarks at USS San Francisco Propulsion Sea Trial"
+    "Title": "Remarks at USS San Francisco Propulsion Sea Trial",
+    "blog_page": "posts/remarks-at-uss-san-francisco-propulsion-sea-trial.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+at+USS+Jacksonville+Propulsion+Sea+Trial.pdf",
@@ -1203,7 +1336,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1981,
     "Type": "Speech",
-    "Title": "Remarks at USS Jacksonville Propulsion Sea Trial"
+    "Title": "Remarks at USS Jacksonville Propulsion Sea Trial",
+    "blog_page": "posts/remarks-at-uss-jacksonville-propulsion-sea-trial.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+at+USS+Dallas+Propulsion+Sea+Trial.pdf",
@@ -1212,7 +1346,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1981,
     "Type": "Speech",
-    "Title": "Remarks at USS Dallas Propulsion Sea Trial"
+    "Title": "Remarks at USS Dallas Propulsion Sea Trial",
+    "blog_page": "posts/remarks-at-uss-dallas-propulsion-sea-trial.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Rickover+Final+Testimony+to+Congress.pdf",
@@ -1221,7 +1356,8 @@
     "Source": "https://www.worldfuturefund.org/Articles/rickover.html",
     "Year": 1982,
     "Type": "Congressional Testimony",
-    "Title": "Rickover Final Testimony to Congress"
+    "Title": "Rickover Final Testimony to Congress",
+    "blog_page": "posts/rickover-final-testimony-to-congress.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Doing+a+Job.pdf",
@@ -1230,7 +1366,8 @@
     "Source": "https://govleaders.org/rickover.htm",
     "Year": 1982,
     "Type": "Speech",
-    "Title": "Doing a Job"
+    "Title": "Doing a Job",
+    "blog_page": "posts/doing-a-job.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Mans+Purpose+in+Life.pdf",
@@ -1239,7 +1376,8 @@
     "Source": "https://govleaders.org/rickover-purpose.htm",
     "Year": 1982,
     "Type": "Speech",
-    "Title": "Mans Purpose in Life"
+    "Title": "Mans Purpose in Life",
+    "blog_page": "posts/mans-purpose-in-life.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Some+Thoughts+on+lmproving+American+Education.pdf",
@@ -1248,7 +1386,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1982,
     "Type": "Speech",
-    "Title": "Some Thoughts on lmproving American Education"
+    "Title": "Some Thoughts on lmproving American Education",
+    "blog_page": "posts/some-thoughts-on-lmproving-american-education.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Assessment+of+GPU+Nuclear+Corporation.pdf",
@@ -1257,7 +1396,8 @@
     "Source": "https://archives.dickinson.edu/sites/default/files/files_document/TMI-Alert_4-9-9-14.pdf",
     "Year": 1983,
     "Type": "Memo",
-    "Title": "Assessment of GPU Nuclear Corporation"
+    "Title": "Assessment of GPU Nuclear Corporation",
+    "blog_page": "posts/assessment-of-gpu-nuclear-corporation.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+at+Commissioning+of+USS+Ohio.pdf",
@@ -1266,7 +1406,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1981,
     "Type": "Speech",
-    "Title": "Remarks at Commissioning of USS Ohio"
+    "Title": "Remarks at Commissioning of USS Ohio",
+    "blog_page": "posts/remarks-at-commissioning-of-uss-ohio.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Images+from+Rickovers+Award+Ceremony+at+the+Economic+Club+of+Indianapolis,+Inc..pdf",
@@ -1275,7 +1416,8 @@
     "Source": "USNA Archives Box 27",
     "Year": 1975,
     "Type": "Image",
-    "Title": "Images from Rickovers Award Ceremony at the Economic Club of Indianapolis, Inc."
+    "Title": "Images from Rickovers Award Ceremony at the Economic Club of Indianapolis, Inc.",
+    "blog_page": "posts/images-from-rickovers-award-ceremony-at-the-economic-club-of-indianapolis-inc.html"
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+at+Completion+of+USS+Ohio+First+Sea+Trials.pdf",
@@ -1284,6 +1426,7 @@
     "Source": "USNA Archives Box 27",
     "Year": 1981,
     "Type": "Speech",
-    "Title": "Remarks at Completion of USS Ohio First Sea Trials"
+    "Title": "Remarks at Completion of USS Ohio First Sea Trials",
+    "blog_page": "posts/remarks-at-completion-of-uss-ohio-first-sea-trials.html"
   }
 ]
