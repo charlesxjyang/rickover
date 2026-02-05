@@ -1493,7 +1493,7 @@
     "Type": "Congressional Testimony",
     "Title": "Rickover Final Testimony to Congress",
     "blog_page": "posts/rickover-final-testimony-to-congress.html",
-    "gemini": true
+    "gemini": false
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Doing+a+Job.pdf",
