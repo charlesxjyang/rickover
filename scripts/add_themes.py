@@ -180,11 +180,11 @@ def regenerate_blog_html(data):
     <h1 class="text-3xl font-bold tracking-tight mb-2">The Rickover Corpus — Full Text</h1>
     <p class="text-gray-600 mb-4">Over 40 of Admiral Rickover's speeches, testimonies, and writings — transcribed and searchable.</p>
     <input id="searchInput" type="text" placeholder="Search by title, theme, or keyword..." class="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400">
-    <div class="mt-4 flex flex-wrap items-center gap-2">
-      <select id="yearFilter" class="border border-gray-300 rounded-lg px-3 py-1.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-400">
-        <option value="">All years</option>
+    <div class="mt-4 flex flex-wrap items-center gap-3">
+      <select id="themeFilter" class="border border-gray-300 rounded-lg px-3 py-1.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <option value="">All themes</option>
       </select>
-      <div id="themeFilters" class="flex flex-wrap gap-2"></div>
+      <button id="yearSort" class="border border-gray-300 rounded-lg px-3 py-1.5 text-sm bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer">Year ↓</button>
     </div>
   </header>
   <main class="max-w-3xl mx-auto px-4 pb-12">
@@ -201,6 +201,7 @@ def regenerate_blog_html(data):
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2/dist/fuse.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {{
+      const container = document.getElementById('blogCards');
       const cards = document.querySelectorAll('#blogCards > a');
       const data = Array.from(cards).map(card => ({{
         title: card.dataset.title,
@@ -210,55 +211,31 @@ def regenerate_blog_html(data):
         el: card
       }}));
 
-      const themeColors = {{
-        'Education': 'bg-green-100 text-green-800 border-green-300',
-        'Society': 'bg-pink-100 text-pink-800 border-pink-300',
-        'Navy': 'bg-blue-100 text-blue-800 border-blue-300',
-        'Government': 'bg-red-100 text-red-800 border-red-300',
-        'Energy': 'bg-yellow-100 text-yellow-800 border-yellow-300',
-        'Management': 'bg-purple-100 text-purple-800 border-purple-300',
-        'Technology': 'bg-indigo-100 text-indigo-800 border-indigo-300',
-        'Accountability': 'bg-orange-100 text-orange-800 border-orange-300',
-      }};
-
-      const years = [...new Set(data.map(d => d.year))].filter(Boolean).sort((a, b) => b - a);
-      const yearSelect = document.getElementById('yearFilter');
-      years.forEach(y => {{
-        const opt = document.createElement('option');
-        opt.value = y;
-        opt.textContent = y;
-        yearSelect.appendChild(opt);
-      }});
-
       const allThemes = {{}};
       data.forEach(d => d.themes.forEach(t => {{ allThemes[t] = (allThemes[t] || 0) + 1; }}));
-      const themeContainer = document.getElementById('themeFilters');
-      let activeTheme = '';
-
+      const themeSelect = document.getElementById('themeFilter');
       Object.keys(allThemes).sort((a, b) => allThemes[b] - allThemes[a]).forEach(theme => {{
-        const btn = document.createElement('button');
-        const colors = themeColors[theme] || 'bg-gray-100 text-gray-800 border-gray-300';
-        btn.className = 'px-2.5 py-1 rounded text-sm border cursor-pointer transition-all opacity-60 hover:opacity-100 ' + colors;
-        btn.textContent = theme;
-        btn.dataset.theme = theme;
-        btn.addEventListener('click', () => {{
-          if (activeTheme === theme) {{
-            activeTheme = '';
-            themeContainer.querySelectorAll('button').forEach(b => b.classList.remove('ring-2', 'ring-offset-1', 'opacity-100'));
-            themeContainer.querySelectorAll('button').forEach(b => b.classList.add('opacity-60'));
-          }} else {{
-            activeTheme = theme;
-            themeContainer.querySelectorAll('button').forEach(b => {{
-              b.classList.remove('ring-2', 'ring-offset-1', 'opacity-100');
-              b.classList.add('opacity-60');
-            }});
-            btn.classList.add('ring-2', 'ring-offset-1', 'opacity-100');
-            btn.classList.remove('opacity-60');
-          }}
-          applyFilters();
-        }});
-        themeContainer.appendChild(btn);
+        const opt = document.createElement('option');
+        opt.value = theme;
+        opt.textContent = theme + ' (' + allThemes[theme] + ')';
+        themeSelect.appendChild(opt);
       }});
+
+      let sortDesc = true;
+      const yearBtn = document.getElementById('yearSort');
+      yearBtn.addEventListener('click', () => {{
+        sortDesc = !sortDesc;
+        yearBtn.textContent = sortDesc ? 'Year ↓' : 'Year ↑';
+        sortCards();
+      }});
+
+      function sortCards() {{
+        const sorted = [...data].sort((a, b) => {{
+          const ya = parseInt(a.year) || 0, yb = parseInt(b.year) || 0;
+          return sortDesc ? yb - ya : ya - yb;
+        }});
+        sorted.forEach(d => container.appendChild(d.el));
+      }}
 
       const fuse = new Fuse(data, {{
         keys: ['title', 'summary'],
@@ -268,20 +245,19 @@ def regenerate_blog_html(data):
 
       function applyFilters() {{
         const query = document.getElementById('searchInput').value.trim();
-        const yearVal = yearSelect.value;
+        const themeVal = themeSelect.value;
 
         let visible = query ? new Set(fuse.search(query).map(r => r.item)) : new Set(data);
 
         data.forEach(d => {{
           let show = visible.has(d);
-          if (show && yearVal && d.year !== yearVal) show = false;
-          if (show && activeTheme && !d.themes.includes(activeTheme)) show = false;
+          if (show && themeVal && !d.themes.includes(themeVal)) show = false;
           d.el.style.display = show ? '' : 'none';
         }});
       }}
 
       document.getElementById('searchInput').addEventListener('input', applyFilters);
-      yearSelect.addEventListener('change', applyFilters);
+      themeSelect.addEventListener('change', applyFilters);
     }});
   </script>
 </body>
