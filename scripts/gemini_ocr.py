@@ -220,9 +220,11 @@ def split_pdf(pdf_path: str, chunk_size: int = CHUNK_SIZE) -> list:
 
 def extract_chunk_with_gemini(client, pdf_path: str, title: str, page_info: str = "") -> str:
     """Upload a PDF (or chunk) to Gemini and extract clean HTML text."""
-    prompt = GEMINI_PROMPT
     if page_info:
-        prompt += "\n\nNote: This is " + page_info + " of the document. Continue extracting faithfully."
+        # Shorter prompt for chunks — long prompt + multi-page chunks can cause empty responses
+        prompt = "Extract all text from this PDF as clean HTML paragraphs using <p> tags. Remove page numbers, headers/footers, and boilerplate. Fix obvious OCR errors. Output only <p> tags, no markdown or commentary. This is " + page_info + "."
+    else:
+        prompt = GEMINI_PROMPT
 
     # Retry with fresh upload each attempt (file refs can go stale)
     max_retries = 5
