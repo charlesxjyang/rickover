@@ -855,7 +855,7 @@
     "Type": "Speech",
     "Title": "Education and Patriotism",
     "blog_page": "posts/education-and-patriotism.html",
-    "gemini": true,
+    "gemini": false,
     "themes": [
       "Education"
     ]
