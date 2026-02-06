@@ -88,7 +88,7 @@ def clean_with_gemini(client, ocr_html: str, title: str) -> str:
     for attempt in range(max_retries):
         try:
             response = client.models.generate_content(
-                model="gemini-3-flash-preview",
+                model="gemini-2.5-flash",
                 contents=[CLEANUP_PROMPT + ocr_html],
                 config=genai.types.GenerateContentConfig(
                     temperature=0.1,
