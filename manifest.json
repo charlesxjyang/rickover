@@ -8,7 +8,10 @@
     "Type": "Speech",
     "Title": "Some Thoughts on the Future of the United States Government by Admiral H. G. Rickover, USN",
     "blog_page": "posts/some-thoughts-on-the-future-of-the-united-states-government-by-admiral-h-g-rickover-usn.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Government"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Economics+of+Military+Procurement+Part+II.pdf",
@@ -41,7 +44,11 @@
     "Type": "Memo",
     "Title": "Paper Reactor Memo",
     "blog_page": "posts/paper-reactor-memo.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Navy",
+      "Engineering"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Amending+the+Atomic+Energy+Act+of+1954+-+Exchanging+of+Military+Information+and+Material+With+Allies,+85th+Congress,+27+February+1958.pdf",
@@ -63,7 +70,11 @@
     "Type": "Speech",
     "Title": "Rickover 1954 Administering Large Projects Speech",
     "blog_page": "posts/rickover-1954-administering-large-projects-speech.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Management",
+      "Navy"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Roosevelt+Centennial+News.pdf",
@@ -184,7 +195,10 @@
     "Type": "Speech",
     "Title": "Meaning of Nautilus Polar Voyage",
     "blog_page": "posts/meaning-of-nautilus-polar-voyage.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Navy"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Bicentennial+Science+Award+for+City+College.pdf",
@@ -250,7 +264,11 @@
     "Type": "Speech",
     "Title": "Our Naval Revolution",
     "blog_page": "posts/our-naval-revolution.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Navy",
+      "Technology"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Role+of+Professional+Man.pdf",
@@ -261,7 +279,11 @@
     "Type": "Speech",
     "Title": "Role of Professional Man",
     "blog_page": "posts/role-of-professional-man.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Society",
+      "Work"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Shippingport+Lessons+Learned.pdf",
@@ -283,7 +305,10 @@
     "Type": "Speech",
     "Title": "Rickover and Education",
     "blog_page": "posts/rickover-and-education.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Education"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Role+of+the+Critic.pdf",
@@ -294,7 +319,11 @@
     "Type": "Speech",
     "Title": "Role of the Critic",
     "blog_page": "posts/role-of-the-critic.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Society",
+      "Education"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Illusions+Cost+Too+Much.pdf",
@@ -305,7 +334,11 @@
     "Type": "Speech",
     "Title": "Illusions Cost Too Much",
     "blog_page": "posts/illusions-cost-too-much.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Navy",
+      "Accountability"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Report+on+Russia+by+Vice+Admiral+Hyman+G.+Rickover,+USN,+86th+Congress+1959.pdf",
@@ -338,7 +371,11 @@
     "Type": "Speech",
     "Title": "Democracy and Competence",
     "blog_page": "posts/democracy-and-competence.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Government",
+      "Education"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Intellect+in+a+Democracy.pdf",
@@ -349,7 +386,11 @@
     "Type": "Speech",
     "Title": "Intellect in a Democracy",
     "blog_page": "posts/intellect-in-a-democracy.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Education",
+      "Government"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Missiles,+Space,+and+Other+Major+Defense+Matters,+86th+Congress,+1960.pdf",
@@ -371,7 +412,11 @@
     "Type": "Speech",
     "Title": "In Defense of Truth",
     "blog_page": "posts/in-defense-of-truth.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Society",
+      "Education"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Department+of+Defense+Appropriations+for+1960,+86th+Congress,+27+April+1959.pdf",
@@ -393,7 +438,11 @@
     "Type": "Speech",
     "Title": "Americas Goals",
     "blog_page": "posts/americas-goals.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Society",
+      "Education"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/AEC+Authorizing+Legislation+Fiscal+Year+1960,+86th+Congress,+23+March+1959.pdf",
@@ -448,7 +497,10 @@
     "Type": "Speech",
     "Title": "The Talented Mind",
     "blog_page": "posts/the-talented-mind.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Education"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Authorizing+Appropriations+for+Aircraft,+Missiles,+and+Naval+Vessels+for+the+Armed+Forces,+and+for+Other+Purposes,+87th+Congress,+24+April+1961.pdf",
@@ -536,7 +588,11 @@
     "Type": "Speech",
     "Title": "Never Ending Challenge",
     "blog_page": "posts/never-ending-challenge.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Navy",
+      "Management"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/AEC+Authorizing+Legislation,+Fiscal+Year+1963,+18+May+1962.pdf",
@@ -635,7 +691,10 @@
     "Type": "Speech",
     "Title": "Decline of the Individual - Post",
     "blog_page": "posts/decline-of-the-individual-post.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Society"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Nuclear+Propulsion+for+Naval+Surface+Vessels,+88th+Congress,+October+30,+31+and+November+13,+1963.pdf",
@@ -668,7 +727,10 @@
     "Type": "Speech",
     "Title": "Fact and Fiction in American Education",
     "blog_page": "posts/fact-and-fiction-in-american-education.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Education"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/The+Kroll+Zirconium+Medal+Award+Banquet+Pamphlet.pdf",
@@ -701,7 +763,11 @@
     "Type": "Speech",
     "Title": "Nuclear Power and Bremerton",
     "blog_page": "posts/nuclear-power-and-bremerton.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Navy",
+      "Energy"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Bremerton,+honoring+NavSec+and+Senator.pdf",
@@ -734,7 +800,11 @@
     "Type": "Speech",
     "Title": "Technology and the Citizen",
     "blog_page": "posts/technology-and-the-citizen.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Technology",
+      "Society"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Meaning+of+a+University.pdf",
@@ -745,7 +815,10 @@
     "Type": "Speech",
     "Title": "Meaning of a University",
     "blog_page": "posts/meaning-of-a-university.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Education"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+after+Bremerton+Propulsion+Sea+Trials.pdf",
@@ -767,7 +840,11 @@
     "Type": "Speech",
     "Title": "Significance of Electricity",
     "blog_page": "posts/significance-of-electricity.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Energy",
+      "Technology"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Education+and+Patriotism.pdf",
@@ -778,7 +855,10 @@
     "Type": "Speech",
     "Title": "Education and Patriotism",
     "blog_page": "posts/education-and-patriotism.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Education"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Energy+Speech+at+Athens+Propeller+Club.pdf",
@@ -789,7 +869,10 @@
     "Type": "Speech",
     "Title": "Energy Speech at Athens Propeller Club",
     "blog_page": "posts/energy-speech-at-athens-propeller-club.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Energy"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Narwhal+Introduction.pdf",
@@ -844,7 +927,10 @@
     "Type": "Speech",
     "Title": "Nationsal Scholastic Standard",
     "blog_page": "posts/nationsal-scholastic-standard.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Education"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Freedom+and+the+Knowledge+Gap.pdf",
@@ -855,7 +941,11 @@
     "Type": "Speech",
     "Title": "Freedom and the Knowledge Gap",
     "blog_page": "posts/freedom-and-the-knowledge-gap.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Education",
+      "Society"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Accounting+Practices+-+Do+They+Protect+the+Public.pdf",
@@ -866,7 +956,11 @@
     "Type": "Speech",
     "Title": "Accounting Practices - Do They Protect the Public",
     "blog_page": "posts/accounting-practices-do-they-protect-the-public.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Accountability",
+      "Government"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Who+Protects+the+Public.pdf",
@@ -877,7 +971,11 @@
     "Type": "Speech",
     "Title": "Who Protects the Public",
     "blog_page": "posts/who-protects-the-public.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Accountability",
+      "Government"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Hearings+on+Military+Posture+and+S.+3293,+90th+Congress13+June+1968.pdf",
@@ -910,7 +1008,11 @@
     "Type": "Speech",
     "Title": "Humanistic Technology",
     "blog_page": "posts/humanistic-technology.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Technology",
+      "Society"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/IMG_20250604_0025.pdf",
@@ -943,7 +1045,11 @@
     "Type": "Speech",
     "Title": "Liberty, Science, and Law",
     "blog_page": "posts/liberty-science-and-law.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Society",
+      "Law"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/What+Are+Schools+For.pdf",
@@ -954,7 +1060,10 @@
     "Type": "Speech",
     "Title": "What Are Schools For",
     "blog_page": "posts/what-are-schools-for.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Education"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/AEC+Authorizing+Legislation+Fiscal+Year+1971,+91st+Congress,+19+March+1970.pdf",
@@ -987,7 +1096,10 @@
     "Type": "Speech",
     "Title": "Energy - A Diminishing Capital Resource",
     "blog_page": "posts/energy-a-diminishing-capital-resource.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Energy"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Statement+to+the+Cost+Accounting+Standards+Board+Concerning+a+Proposal+to+Issue+a+Cost+Accounting+Standart+Dealing+with+Depriciation+of+Tangible+Capital+Assets.pdf",
@@ -1009,7 +1121,11 @@
     "Type": "Speech",
     "Title": "Personal Accountability in Financial Management",
     "blog_page": "posts/personal-accountability-in-financial-management.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Accountability",
+      "Government"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+by+Adm.+H.+G.+Rickover,+USN+before+the+National+Society+of+Former+Special+Agents+of+the+FBI.pdf",
@@ -1053,7 +1169,11 @@
     "Type": "Speech",
     "Title": "The Role of Engineering in the Navy",
     "blog_page": "posts/the-role-of-engineering-in-the-navy.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Navy",
+      "Engineering"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/1975+Rickover+Paper+on+Zirconium.pdf",
@@ -1108,7 +1228,11 @@
     "Type": "Speech",
     "Title": "Business and Freedom",
     "blog_page": "posts/business-and-freedom.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Society",
+      "Work"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/The+Decision+to+use+Zirconium+in+Nuclear+Reactors.pdf",
@@ -1229,7 +1353,10 @@
     "Type": "Speech",
     "Title": "The Purpose of Education",
     "blog_page": "posts/the-purpose-of-education.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Education"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Three+Mile+Island+Incident+Testimony.pdf",
@@ -1306,7 +1433,11 @@
     "Type": "Article",
     "Title": "1979 Management Magazine - Rickover on Management",
     "blog_page": "posts/1979-management-magazine-rickover-on-management.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Management",
+      "Leadership"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Memo+of+Conversation+with+Jimmy+Carter.pdf",
@@ -1317,7 +1448,11 @@
     "Type": "Memo",
     "Title": "Memo of Conversation with Jimmy Carter",
     "blog_page": "posts/memo-of-conversation-with-jimmy-carter.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Government",
+      "Navy"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+By+Admiral+H,+G.+Rickdver.+U.+S.+Navy+TO+THE+Puget+Sound+NJaval+Base+Association,+Inc..pdf",
@@ -1350,7 +1485,11 @@
     "Type": "Speech",
     "Title": "Environmental Perspective",
     "blog_page": "posts/environmental-perspective.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Energy",
+      "Environment"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+By+Admiral+H.+G.+Rickover,+USN+On+Acceptance+Of+The+Harry+S.+Truman+Good+Neighbor+Award.pdf",
@@ -1383,7 +1522,11 @@
     "Type": "Speech",
     "Title": "Lawyers versus Society",
     "blog_page": "posts/lawyers-versus-society.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Society",
+      "Law"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Rickover+-+Part+2+Selected+Testimony+&+Speeches.pdf",
@@ -1438,7 +1581,11 @@
     "Type": "Speech",
     "Title": "Summary of President Nixon Dinner Conversation",
     "blog_page": "posts/summary-of-president-nixon-dinner-conversation.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Government",
+      "Navy"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/SUBJ+Leadership.pdf",
@@ -1504,7 +1651,11 @@
     "Type": "Speech",
     "Title": "Doing a Job",
     "blog_page": "posts/doing-a-job.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Management",
+      "Leadership"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Mans+Purpose+in+Life.pdf",
@@ -1515,7 +1666,10 @@
     "Type": "Speech",
     "Title": "Mans Purpose in Life",
     "blog_page": "posts/mans-purpose-in-life.html",
-    "gemini": true
+    "gemini": true,
+    "themes": [
+      "Society"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Some+Thoughts+on+lmproving+American+Education.pdf",
