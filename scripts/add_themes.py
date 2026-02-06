@@ -157,7 +157,7 @@ def regenerate_blog_html(data):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog — The Rickover Corpus</title>
+  <title>Full Text — The Rickover Corpus</title>
   <meta name="description" content="Full-text blog posts from Admiral Hyman G. Rickover's speeches, testimonies, and writings.">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="/assets/rickover_favicon.png" sizes="256x256">
@@ -174,12 +174,12 @@ def regenerate_blog_html(data):
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
   <header class="max-w-3xl mx-auto px-4 pt-10 pb-6">
-    <h1 class="text-3xl font-bold tracking-tight mb-2">The Rickover Corpus — Blog</h1>
-    <p class="text-gray-600 mb-4">Full-text transcriptions of Admiral Rickover's speeches, testimonies, and writings.</p>
-    <nav class="text-sm mb-6">
-      <a href="/index.html">&larr; Back to Archive</a>
+    <nav class="text-sm mb-4">
+      <a href="/index.html">&larr; Back to Full Archive (143 documents)</a>
     </nav>
-    <input id="searchInput" type="text" placeholder="Search posts..." class="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400">
+    <h1 class="text-3xl font-bold tracking-tight mb-2">The Rickover Corpus — Full Text</h1>
+    <p class="text-gray-600 mb-4">Over 40 of Admiral Rickover's speeches, testimonies, and writings — transcribed and searchable.</p>
+    <input id="searchInput" type="text" placeholder="Search by title, theme, or keyword..." class="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400">
   </header>
   <main class="max-w-3xl mx-auto px-4 pb-12">
     <div id="blogCards" class="space-y-4">
