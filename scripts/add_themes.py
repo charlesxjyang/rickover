@@ -180,6 +180,12 @@ def regenerate_blog_html(data):
     <h1 class="text-3xl font-bold tracking-tight mb-2">The Rickover Corpus — Full Text</h1>
     <p class="text-gray-600 mb-4">Over 40 of Admiral Rickover's speeches, testimonies, and writings — transcribed and searchable.</p>
     <input id="searchInput" type="text" placeholder="Search by title, theme, or keyword..." class="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400">
+    <div class="mt-4 flex flex-wrap items-center gap-2">
+      <select id="yearFilter" class="border border-gray-300 rounded-lg px-3 py-1.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <option value="">All years</option>
+      </select>
+      <div id="themeFilters" class="flex flex-wrap gap-2"></div>
+    </div>
   </header>
   <main class="max-w-3xl mx-auto px-4 pb-12">
     <div id="blogCards" class="space-y-4">
@@ -200,26 +206,82 @@ def regenerate_blog_html(data):
         title: card.dataset.title,
         summary: card.dataset.summary,
         year: card.dataset.year,
-        themes: card.dataset.themes,
+        themes: card.dataset.themes ? card.dataset.themes.split(',') : [],
         el: card
       }}));
+
+      const themeColors = {{
+        'Education': 'bg-green-100 text-green-800 border-green-300',
+        'Society': 'bg-pink-100 text-pink-800 border-pink-300',
+        'Navy': 'bg-blue-100 text-blue-800 border-blue-300',
+        'Government': 'bg-red-100 text-red-800 border-red-300',
+        'Energy': 'bg-yellow-100 text-yellow-800 border-yellow-300',
+        'Management': 'bg-purple-100 text-purple-800 border-purple-300',
+        'Technology': 'bg-indigo-100 text-indigo-800 border-indigo-300',
+        'Accountability': 'bg-orange-100 text-orange-800 border-orange-300',
+      }};
+
+      const years = [...new Set(data.map(d => d.year))].filter(Boolean).sort((a, b) => b - a);
+      const yearSelect = document.getElementById('yearFilter');
+      years.forEach(y => {{
+        const opt = document.createElement('option');
+        opt.value = y;
+        opt.textContent = y;
+        yearSelect.appendChild(opt);
+      }});
+
+      const allThemes = {{}};
+      data.forEach(d => d.themes.forEach(t => {{ allThemes[t] = (allThemes[t] || 0) + 1; }}));
+      const themeContainer = document.getElementById('themeFilters');
+      let activeTheme = '';
+
+      Object.keys(allThemes).sort((a, b) => allThemes[b] - allThemes[a]).forEach(theme => {{
+        const btn = document.createElement('button');
+        const colors = themeColors[theme] || 'bg-gray-100 text-gray-800 border-gray-300';
+        btn.className = 'px-2.5 py-1 rounded text-sm border cursor-pointer transition-all opacity-60 hover:opacity-100 ' + colors;
+        btn.textContent = theme;
+        btn.dataset.theme = theme;
+        btn.addEventListener('click', () => {{
+          if (activeTheme === theme) {{
+            activeTheme = '';
+            themeContainer.querySelectorAll('button').forEach(b => b.classList.remove('ring-2', 'ring-offset-1', 'opacity-100'));
+            themeContainer.querySelectorAll('button').forEach(b => b.classList.add('opacity-60'));
+          }} else {{
+            activeTheme = theme;
+            themeContainer.querySelectorAll('button').forEach(b => {{
+              b.classList.remove('ring-2', 'ring-offset-1', 'opacity-100');
+              b.classList.add('opacity-60');
+            }});
+            btn.classList.add('ring-2', 'ring-offset-1', 'opacity-100');
+            btn.classList.remove('opacity-60');
+          }}
+          applyFilters();
+        }});
+        themeContainer.appendChild(btn);
+      }});
+
       const fuse = new Fuse(data, {{
-        keys: ['title', 'summary', 'themes'],
+        keys: ['title', 'summary'],
         threshold: 0.4,
         minMatchCharLength: 2,
       }});
-      document.getElementById('searchInput').addEventListener('input', (e) => {{
-        const query = e.target.value.trim();
-        if (!query) {{
-          data.forEach(d => d.el.style.display = '');
-          return;
-        }}
-        const results = fuse.search(query);
-        const matched = new Set(results.map(r => r.item.el));
+
+      function applyFilters() {{
+        const query = document.getElementById('searchInput').value.trim();
+        const yearVal = yearSelect.value;
+
+        let visible = query ? new Set(fuse.search(query).map(r => r.item)) : new Set(data);
+
         data.forEach(d => {{
-          d.el.style.display = matched.has(d.el) ? '' : 'none';
+          let show = visible.has(d);
+          if (show && yearVal && d.year !== yearVal) show = false;
+          if (show && activeTheme && !d.themes.includes(activeTheme)) show = false;
+          d.el.style.display = show ? '' : 'none';
         }});
-      }});
+      }}
+
+      document.getElementById('searchInput').addEventListener('input', applyFilters);
+      yearSelect.addEventListener('change', applyFilters);
     }});
   </script>
 </body>
