@@ -192,7 +192,7 @@ def download_pdf(url: str, dest: str) -> bool:
     return False
 
 
-CHUNK_SIZE = 10  # Max pages per chunk
+CHUNK_SIZE = 7  # Max pages per chunk
 
 
 def split_pdf(pdf_path: str, chunk_size: int = CHUNK_SIZE) -> list:
