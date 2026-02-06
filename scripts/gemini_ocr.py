@@ -13,6 +13,7 @@ import tempfile
 import requests
 from pathlib import Path
 from dotenv import load_dotenv
+from pypdf import PdfReader, PdfWriter
 
 # Load .env from project root
 load_dotenv(Path(__file__).resolve().parent.parent / ".env")
@@ -191,9 +192,34 @@ def download_pdf(url: str, dest: str) -> bool:
     return False
 
 
-def extract_text_with_gemini(client, pdf_path: str, title: str) -> str:
-    """Upload PDF to Gemini and extract clean HTML text."""
-    # Upload file
+CHUNK_SIZE = 10  # Max pages per chunk
+
+
+def split_pdf(pdf_path: str, chunk_size: int = CHUNK_SIZE) -> list:
+    """Split a PDF into chunks, returning list of (chunk_path, start_page, end_page)."""
+    reader = PdfReader(pdf_path)
+    total_pages = len(reader.pages)
+
+    if total_pages <= chunk_size:
+        return [(pdf_path, 1, total_pages)]
+
+    chunks = []
+    tmpdir = tempfile.mkdtemp()
+    for start in range(0, total_pages, chunk_size):
+        end = min(start + chunk_size, total_pages)
+        writer = PdfWriter()
+        for i in range(start, end):
+            writer.add_page(reader.pages[i])
+        chunk_path = os.path.join(tmpdir, f"chunk_{start+1}_{end}.pdf")
+        with open(chunk_path, 'wb') as f:
+            writer.write(f)
+        chunks.append((chunk_path, start + 1, end))
+
+    return chunks
+
+
+def extract_chunk_with_gemini(client, pdf_path: str, title: str, page_info: str = "") -> str:
+    """Upload a PDF (or chunk) to Gemini and extract clean HTML text."""
     uploaded = client.files.upload(file=pdf_path)
 
     # Wait for file to be processed
@@ -204,6 +230,10 @@ def extract_text_with_gemini(client, pdf_path: str, title: str) -> str:
     if uploaded.state.name == "FAILED":
         raise RuntimeError(f"Gemini file upload failed for {title}")
 
+    prompt = GEMINI_PROMPT
+    if page_info:
+        prompt += "\n\nNote: This is " + page_info + " of the document. Continue extracting faithfully."
+
     # Generate content with retry on rate limits
     max_retries = 5
     for attempt in range(max_retries):
@@ -212,7 +242,7 @@ def extract_text_with_gemini(client, pdf_path: str, title: str) -> str:
                 model="gemini-3-flash-preview",
                 contents=[
                     genai.types.Part.from_uri(file_uri=uploaded.uri, mime_type="application/pdf"),
-                    GEMINI_PROMPT,
+                    prompt,
                 ],
                 config=genai.types.GenerateContentConfig(
                     temperature=0.1,
@@ -234,7 +264,7 @@ def extract_text_with_gemini(client, pdf_path: str, title: str) -> str:
     except Exception:
         pass
 
-    text = response.text.strip()
+    text = response.text.strip() if response.text else ""
     # Strip markdown code block wrapper if present
     if text.startswith("```html"):
         text = text[7:]
@@ -243,6 +273,33 @@ def extract_text_with_gemini(client, pdf_path: str, title: str) -> str:
     if text.endswith("```"):
         text = text[:-3]
     return text.strip()
+
+
+def extract_text_with_gemini(client, pdf_path: str, title: str) -> str:
+    """Extract text from PDF, chunking if over CHUNK_SIZE pages."""
+    reader = PdfReader(pdf_path)
+    total_pages = len(reader.pages)
+
+    if total_pages <= CHUNK_SIZE:
+        print(f"  {total_pages} pages — single pass")
+        return extract_chunk_with_gemini(client, pdf_path, title)
+
+    # Split into chunks
+    print(f"  {total_pages} pages — chunking into {CHUNK_SIZE}-page segments")
+    chunks = split_pdf(pdf_path)
+    all_text = []
+
+    for chunk_path, start, end in chunks:
+        page_info = f"pages {start}-{end} of {total_pages}"
+        print(f"  Processing {page_info}...")
+        chunk_text = extract_chunk_with_gemini(client, chunk_path, title, page_info)
+        all_text.append(chunk_text)
+        # Clean up chunk file if it's not the original
+        if chunk_path != pdf_path:
+            os.remove(chunk_path)
+        time.sleep(2)  # Brief pause between chunks
+
+    return "\n\n".join(all_text)
 
 
 def update_post_html(blog_page: str, new_ocr_html: str) -> bool:
