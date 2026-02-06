@@ -178,6 +178,51 @@ POSTS = [
         "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Summary+of+President+Nixon+Dinner+Conversation.pdf",
         "blog_page": "posts/summary-of-president-nixon-dinner-conversation.html"
     },
+    {
+        "title": "Rickover 1954 Administering Large Projects Speech",
+        "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Rickover+1954+Administering+Large+Projects+Speech.PDF",
+        "blog_page": "posts/rickover-1954-administering-large-projects-speech.html"
+    },
+    {
+        "title": "Our Naval Revolution",
+        "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Our+Naval+Revolution.pdf",
+        "blog_page": "posts/our-naval-revolution.html"
+    },
+    {
+        "title": "Americas Goals",
+        "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Americas+Goals.pdf",
+        "blog_page": "posts/americas-goals.html"
+    },
+    {
+        "title": "Never Ending Challenge",
+        "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Never+Ending+Challenge.pdf",
+        "blog_page": "posts/never-ending-challenge.html"
+    },
+    {
+        "title": "Fact and Fiction in American Education",
+        "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Fact+and+Fiction+in+American+Education.pdf",
+        "blog_page": "posts/fact-and-fiction-in-american-education.html"
+    },
+    {
+        "title": "Technology and the Citizen",
+        "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Technology+and+the+Citizen.pdf",
+        "blog_page": "posts/technology-and-the-citizen.html"
+    },
+    {
+        "title": "Nationsal Scholastic Standard",
+        "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Nationsal+Scholastic+Standard.pdf",
+        "blog_page": "posts/nationsal-scholastic-standard.html"
+    },
+    {
+        "title": "Freedom and the Knowledge Gap",
+        "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Freedom+and+the+Knowledge+Gap.pdf",
+        "blog_page": "posts/freedom-and-the-knowledge-gap.html"
+    },
+    {
+        "title": "Liberty, Science, and Law",
+        "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Liberty,+Science,+and+Law.pdf",
+        "blog_page": "posts/liberty-science-and-law.html"
+    },
 ]
 
 

@@ -63,7 +63,7 @@
     "Type": "Speech",
     "Title": "Rickover 1954 Administering Large Projects Speech",
     "blog_page": "posts/rickover-1954-administering-large-projects-speech.html",
-    "gemini": false
+    "gemini": true
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Roosevelt+Centennial+News.pdf",
@@ -250,7 +250,7 @@
     "Type": "Speech",
     "Title": "Our Naval Revolution",
     "blog_page": "posts/our-naval-revolution.html",
-    "gemini": false
+    "gemini": true
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Role+of+Professional+Man.pdf",
@@ -393,7 +393,7 @@
     "Type": "Speech",
     "Title": "Americas Goals",
     "blog_page": "posts/americas-goals.html",
-    "gemini": false
+    "gemini": true
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/AEC+Authorizing+Legislation+Fiscal+Year+1960,+86th+Congress,+23+March+1959.pdf",
@@ -536,7 +536,7 @@
     "Type": "Speech",
     "Title": "Never Ending Challenge",
     "blog_page": "posts/never-ending-challenge.html",
-    "gemini": false
+    "gemini": true
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/AEC+Authorizing+Legislation,+Fiscal+Year+1963,+18+May+1962.pdf",
@@ -668,7 +668,7 @@
     "Type": "Speech",
     "Title": "Fact and Fiction in American Education",
     "blog_page": "posts/fact-and-fiction-in-american-education.html",
-    "gemini": false
+    "gemini": true
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/The+Kroll+Zirconium+Medal+Award+Banquet+Pamphlet.pdf",
@@ -734,7 +734,7 @@
     "Type": "Speech",
     "Title": "Technology and the Citizen",
     "blog_page": "posts/technology-and-the-citizen.html",
-    "gemini": false
+    "gemini": true
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Meaning+of+a+University.pdf",
@@ -844,7 +844,7 @@
     "Type": "Speech",
     "Title": "Nationsal Scholastic Standard",
     "blog_page": "posts/nationsal-scholastic-standard.html",
-    "gemini": false
+    "gemini": true
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Freedom+and+the+Knowledge+Gap.pdf",
@@ -855,7 +855,7 @@
     "Type": "Speech",
     "Title": "Freedom and the Knowledge Gap",
     "blog_page": "posts/freedom-and-the-knowledge-gap.html",
-    "gemini": false
+    "gemini": true
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Accounting+Practices+-+Do+They+Protect+the+Public.pdf",
@@ -943,7 +943,7 @@
     "Type": "Speech",
     "Title": "Liberty, Science, and Law",
     "blog_page": "posts/liberty-science-and-law.html",
-    "gemini": false
+    "gemini": true
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/What+Are+Schools+For.pdf",
