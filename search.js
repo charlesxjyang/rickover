@@ -99,31 +99,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 sourceCell.textContent = doc.Source || '';
             }
 
-            // Links column - THIS IS WHERE DEEP LINKING IS IMPLEMENTED
+            // Links column
             const linksCell = document.createElement('td');
             linksCell.className = 'w-32 py-2';
             let linksHtml = [];
 
             let fullPdfUrl = doc.file_pdf;
-            let fullOcrUrl = doc.file_OCR;
 
             const s3PathEncodedForUrl = encodeURIComponent(fullPdfUrl);
             const titleEncodedForUrl = encodeURIComponent(doc.Title || '');
             linksHtml.push(
                 `<a href="?file=${s3PathEncodedForUrl}" class="text-blue-600 underline document-link" data-s3-url="${s3PathEncodedForUrl}" data-document-title="${titleEncodedForUrl}">PDF</a>`
             );
-        
-            // The OCR (TXT) files will also load in the iframe, just as raw text
-            const s3PathEncodedForUrlOCR = encodeURIComponent(fullOcrUrl);
-            const titleEncodedForUrlOCR = encodeURIComponent(doc.Title || '');
-            if (fullPdfUrl) { // Add a separator if PDF link already exists
+
+            // Link to blog post if Gemini-processed
+            if (doc.gemini && doc.blog_page) {
                 linksHtml.push(' | ');
+                linksHtml.push(
+                    `<a href="/${doc.blog_page}" class="text-blue-600 underline">Full Text</a>`
+                );
             }
-            linksHtml.push(
-                `<a href="?file=${s3PathEncodedForUrlOCR}" class="text-blue-600 underline document-link" data-s3-url="${s3PathEncodedForUrlOCR}" data-document-title="${titleEncodedForUrlOCR}">OCR</a>`
-            );
-            
-            linksCell.innerHTML = linksHtml.join(''); // Removed extra ' | ' join as it's now handled conditionally
+
+            linksCell.innerHTML = linksHtml.join('');
 
             row.appendChild(sourceCell);
             row.appendChild(linksCell);
