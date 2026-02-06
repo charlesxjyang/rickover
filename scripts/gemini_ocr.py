@@ -223,6 +223,36 @@ POSTS = [
         "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Liberty,+Science,+and+Law.pdf",
         "blog_page": "posts/liberty-science-and-law.html"
     },
+    {
+        "title": "The Role of Engineering in the Navy",
+        "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/The+Role+of+Engineering+in+the+Navy.pdf",
+        "blog_page": "posts/the-role-of-engineering-in-the-navy.html"
+    },
+    {
+        "title": "Decline of the Individual - Post",
+        "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Decline+of+the+Individual+-+Post.pdf",
+        "blog_page": "posts/decline-of-the-individual-post.html"
+    },
+    {
+        "title": "Illusions Cost Too Much",
+        "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Illusions+Cost+Too+Much.pdf",
+        "blog_page": "posts/illusions-cost-too-much.html"
+    },
+    {
+        "title": "Energy - A Diminishing Capital Resource",
+        "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Energy+-+A+Diminishing+Capital+Resource.pdf",
+        "blog_page": "posts/energy-a-diminishing-capital-resource.html"
+    },
+    {
+        "title": "Business and Freedom",
+        "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Business+and+Freedom.pdf",
+        "blog_page": "posts/business-and-freedom.html"
+    },
+    {
+        "title": "Education and Patriotism",
+        "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Education+and+Patriotism.pdf",
+        "blog_page": "posts/education-and-patriotism.html"
+    },
 ]
 
 

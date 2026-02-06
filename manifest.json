@@ -305,7 +305,7 @@
     "Type": "Speech",
     "Title": "Illusions Cost Too Much",
     "blog_page": "posts/illusions-cost-too-much.html",
-    "gemini": false
+    "gemini": true
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Report+on+Russia+by+Vice+Admiral+Hyman+G.+Rickover,+USN,+86th+Congress+1959.pdf",
@@ -635,7 +635,7 @@
     "Type": "Speech",
     "Title": "Decline of the Individual - Post",
     "blog_page": "posts/decline-of-the-individual-post.html",
-    "gemini": false
+    "gemini": true
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Nuclear+Propulsion+for+Naval+Surface+Vessels,+88th+Congress,+October+30,+31+and+November+13,+1963.pdf",
@@ -778,7 +778,7 @@
     "Type": "Speech",
     "Title": "Education and Patriotism",
     "blog_page": "posts/education-and-patriotism.html",
-    "gemini": false
+    "gemini": true
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Energy+Speech+at+Athens+Propeller+Club.pdf",
@@ -987,7 +987,7 @@
     "Type": "Speech",
     "Title": "Energy - A Diminishing Capital Resource",
     "blog_page": "posts/energy-a-diminishing-capital-resource.html",
-    "gemini": false
+    "gemini": true
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Statement+to+the+Cost+Accounting+Standards+Board+Concerning+a+Proposal+to+Issue+a+Cost+Accounting+Standart+Dealing+with+Depriciation+of+Tangible+Capital+Assets.pdf",
@@ -1053,7 +1053,7 @@
     "Type": "Speech",
     "Title": "The Role of Engineering in the Navy",
     "blog_page": "posts/the-role-of-engineering-in-the-navy.html",
-    "gemini": false
+    "gemini": true
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/1975+Rickover+Paper+on+Zirconium.pdf",
@@ -1108,7 +1108,7 @@
     "Type": "Speech",
     "Title": "Business and Freedom",
     "blog_page": "posts/business-and-freedom.html",
-    "gemini": false
+    "gemini": true
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/The+Decision+to+use+Zirconium+in+Nuclear+Reactors.pdf",
