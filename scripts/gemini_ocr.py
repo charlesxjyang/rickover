@@ -220,24 +220,22 @@ def split_pdf(pdf_path: str, chunk_size: int = CHUNK_SIZE) -> list:
 
 def extract_chunk_with_gemini(client, pdf_path: str, title: str, page_info: str = "") -> str:
     """Upload a PDF (or chunk) to Gemini and extract clean HTML text."""
-    uploaded = client.files.upload(file=pdf_path)
-
-    # Wait for file to be processed
-    while uploaded.state.name == "PROCESSING":
-        time.sleep(2)
-        uploaded = client.files.get(name=uploaded.name)
-
-    if uploaded.state.name == "FAILED":
-        raise RuntimeError(f"Gemini file upload failed for {title}")
-
     prompt = GEMINI_PROMPT
     if page_info:
         prompt += "\n\nNote: This is " + page_info + " of the document. Continue extracting faithfully."
 
-    # Generate content with retry on rate limits
+    # Retry with fresh upload each attempt (file refs can go stale)
     max_retries = 5
+    text = ""
     for attempt in range(max_retries):
         try:
+            uploaded = client.files.upload(file=pdf_path)
+            while uploaded.state.name == "PROCESSING":
+                time.sleep(2)
+                uploaded = client.files.get(name=uploaded.name)
+            if uploaded.state.name == "FAILED":
+                raise RuntimeError(f"Gemini file upload failed for {title}")
+
             response = client.models.generate_content(
                 model="gemini-3-flash-preview",
                 contents=[
@@ -249,6 +247,18 @@ def extract_chunk_with_gemini(client, pdf_path: str, title: str, page_info: str 
                     max_output_tokens=65536,
                 ),
             )
+
+            # Clean up uploaded file
+            try:
+                client.files.delete(name=uploaded.name)
+            except Exception:
+                pass
+
+            text = response.text.strip() if response.text else ""
+            if len(text) < 50 and attempt < max_retries - 1:
+                print(f"  WARNING: Empty/short response ({len(text)} chars), re-uploading and retrying (attempt {attempt+1}/{max_retries})...")
+                time.sleep(10)
+                continue
             break
         except Exception as e:
             if "429" in str(e) and attempt < max_retries - 1:
@@ -258,13 +268,8 @@ def extract_chunk_with_gemini(client, pdf_path: str, title: str, page_info: str 
             else:
                 raise
 
-    # Clean up uploaded file
-    try:
-        client.files.delete(name=uploaded.name)
-    except Exception:
-        pass
-
-    text = response.text.strip() if response.text else ""
+    if len(text) < 50:
+        print(f"  ERROR: Chunk returned only {len(text)} chars after {max_retries} retries")
     # Strip markdown code block wrapper if present
     if text.startswith("```html"):
         text = text[7:]
