@@ -1691,7 +1691,11 @@
     "Type": "Memo",
     "Title": "Assessment of GPU Nuclear Corporation",
     "blog_page": "posts/assessment-of-gpu-nuclear-corporation.html",
-    "gemini": false
+    "gemini": true,
+    "themes": [
+      "Management",
+      "Energy"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Remarks+at+Commissioning+of+USS+Ohio.pdf",

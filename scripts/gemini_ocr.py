@@ -253,6 +253,11 @@ POSTS = [
         "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Education+and+Patriotism.pdf",
         "blog_page": "posts/education-and-patriotism.html"
     },
+    {
+        "title": "Assessment of GPU Nuclear Corporation",
+        "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Assessment+of+GPU+Nuclear+Corporation.pdf",
+        "blog_page": "posts/assessment-of-gpu-nuclear-corporation.html"
+    },
 ]
 
 
@@ -338,9 +343,10 @@ def extract_chunk_with_gemini(client, pdf_path: str, title: str, page_info: str 
                 continue
             break
         except Exception as e:
-            if "429" in str(e) and attempt < max_retries - 1:
+            err_str = str(e).lower()
+            if attempt < max_retries - 1 and ("429" in str(e) or "connection" in err_str or "reset" in err_str or "timeout" in err_str or "read error" in err_str):
                 wait = 30 * (attempt + 1)
-                print(f"  Rate limited, waiting {wait}s (attempt {attempt+1}/{max_retries})...")
+                print(f"  Connection/rate error: {type(e).__name__}, waiting {wait}s (attempt {attempt+1}/{max_retries})...")
                 time.sleep(wait)
             else:
                 raise

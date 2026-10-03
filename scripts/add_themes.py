@@ -58,6 +58,7 @@ THEME_MAP = {
     "energy - a diminishing": ["Energy"],
     "business and freedom": ["Society", "Work"],
     "education and patriotism": ["Education"],
+    "assessment of gpu nuclear": ["Management", "Energy"],
 }
 
 THEME_COLORS = {
