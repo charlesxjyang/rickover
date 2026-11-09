@@ -28,6 +28,7 @@ THEME_MAP = {
     "role of the critic": ["Society", "Education"],
     "lawyers versus society": ["Society", "Law"],
     "role of professional man": ["Society", "Work"],
+    "three mile island incident testimony": ["Navy", "Energy", "Management"],
     "energy speech at athens": ["Energy"],
     "nuclear power and bremerton": ["Navy", "Energy"],
     "rickover and education": ["Education"],
