@@ -1363,11 +1363,16 @@
     "file_OCR": "https://rickover-corpus.s3.us-east-1.amazonaws.com/Three+Mile+Island+Incident+Testimony.txt",
     "Summary": "Admiral H. G. Rickover's May 24, 1979 statement outlines the comprehensive philosophy and rigorous approach to nuclear safety within the Naval Reactors Program, reflecting his 60 years of experience. He highlights the program's impressive operational record, with 127 nuclear-powered ships (including 115 submarines, 3 aircraft carriers, and 8 cruisers) accumulating over 1,800 reactor-years and 40 million miles steamed without a single naval reactor accident. Rickover emphasizes a strong environmental and occupational safety record, noting minimal radioactivity discharges and low personnel exposure. A key theme is \"total responsibility\" from design to operation, rejecting simple solutions in favor of deep technical competence, conservative design, and meticulous attention to detail. The statement details a multi-phased, highly demanding training program for over 7,000 officers and 40,000 enlisted personnel, encompassing extensive classroom, prototype, and shipboard instruction, continuous qualification, frequent examinations, and stringent oversight through audits and incident reports to ensure unparalleled safety and performance.",
     "Source": "https://taproot.com/content/wp-content/uploads/2010/09/RickoverCongressionalTestimony.pdf",
-    "Year": 1978,
+    "Year": 1979,
     "Type": "Congressional Testimony",
     "Title": "Three Mile Island Incident Testimony",
     "blog_page": "posts/three-mile-island-incident-testimony.html",
-    "gemini": false
+    "gemini": true,
+    "themes": [
+      "Navy",
+      "Energy",
+      "Management"
+    ]
   },
   {
     "file_pdf": "https://rickover-corpus.s3.us-east-1.amazonaws.com/REMARKS+BY+SENATOR+HENRY+M.+JACKSON+At+the+Launching+of+the+Nuclear+Powered+Attack+SuBmarine+BREMERTON+(SSN69S).pdf",
